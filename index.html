@@ -49,7 +49,9 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 .d2-strap{margin-top:22px;font-size:11px;color:#4a5157;font-weight:400}
 
 /* 03 ALTITUDE */
-.d3-stage{background:linear-gradient(178deg,#070c18 0%,#0e1d38 46%,#1c3557 78%,#41556e 93%,#8d9aa6 100%);border:1px solid #1a2334}
+.d3-stage{position:relative;background:linear-gradient(in oklab,#070c18 0%,#0e1d38 38%,#1c3557 62%,#41556e 80%,#8d9aa6 94%,#b3bfc9 100%);border:1px solid #1a2334}
+.d3-stage::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.d3-stage > *{position:relative;z-index:1}
 .d3-mark{font-weight:400;font-size:70px;color:#f0f3f6;letter-spacing:.17em;display:flex;align-items:flex-start;line-height:.95;position:relative}
 .d3-deg{width:9px;height:9px;border:1.9px solid #f0f3f6;border-radius:50%;position:absolute;left:100%;top:-2px;margin-left:2px}
 .d3-strap{margin-top:18px;font-size:12.5px;color:#c9d4de;font-weight:400}
