@@ -94,6 +94,14 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 .why{font-family:'Newsreader',Georgia,serif;font-weight:300;font-size:16.5px;line-height:1.72;color:#a9b4c0;max-width:56ch;margin-top:40px}
 .why em{font-style:italic;color:#c3ccd6}
 
+.tspec{width:100%;border-collapse:collapse;margin-top:44px;font-size:13.5px}
+.tspec th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;color:#5c646e;font-weight:400;padding:0 24px 14px 0;border-bottom:1px solid #24282e;white-space:nowrap}
+.tspec td{padding:16px 24px 16px 0;border-bottom:1px solid #1a1e23;color:#c3cad2;vertical-align:top;line-height:1.6}
+.tspec td:first-child{color:#e7e9ec;font-weight:500;white-space:nowrap}
+.tspec code{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#8d9aa6}
+.tnote{margin-top:34px;font-size:14px;color:#8b94a0;line-height:1.8;max-width:62ch}
+.tnote strong{color:#c3cad2;font-weight:500}
+.tnote p + p{margin-top:16px}
 .footer{padding:80px 0 120px;font-size:14px;color:#7d858f;line-height:1.85;max-width:62ch}
 .footer strong{color:#c3cad2;font-weight:500}
 .footer p + p{margin-top:20px}
@@ -191,6 +199,43 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
     <div class="row"><span class="t">21:30</span><span class="what">Rest — ninety minutes before sleep</span><span class="dose">1 stick</span></div>
 
     <p class="why">Travelling west lengthens the day, and the body adapts at roughly an hour and a half in that direction — faster than eastward, but still four days from a five-zone shift. <em>The timings above are anchored to destination clock, not origin.</em> Morning light and the first dose are the two strongest signals available; taken together they pull the rhythm forward more than either does alone.</p>
+  </div>
+</section>
+
+
+<!-- TYPE SPEC -->
+<section class="dir">
+  <div class="dir-head"><span class="dir-num">03</span><h2 class="dir-name">Type specification</h2></div>
+  <p class="dir-desc">Everything needed to rebuild this exactly. Values are as drawn on this page.</p>
+
+  <div class="tnote">
+    <p><strong>Primary typeface — Suisse Int'l</strong> (Swiss Typefaces). A neo-grotesque in the Helvetica and Univers line, with circular counters and a robust regular weight that holds on screen and in small print. Licensed, roughly £200–400 for two weights.</p>
+    <p><strong>Stand-in used here — Archivo</strong> (Google Fonts, free). Closest open-source match on x-height, counter shape and tracking behaviour. Inter is an alternative. Swapping to Suisse Int'l should be near-invisible.</p>
+    <p><strong>Secondary — Newsreader</strong> for the one editorial serif passage. The licensed pairing would be Suisse Works. <strong>Data labels — IBM Plex Mono</strong>; the licensed pairing would be Suisse Int'l Mono.</p>
+  </div>
+
+  <table class="tspec">
+    <thead><tr><th>Element</th><th>Weight</th><th>Size</th><th>Tracking</th><th>Colour</th></tr></thead>
+    <tbody>
+      <tr><td>Wordmark</td><td>400 Regular</td><td><code>70px</code></td><td><code>0.17em</code></td><td><code>#F0F3F6</code></td></tr>
+      <tr><td>Degree ring</td><td>1.9px stroke</td><td><code>9px dia</code></td><td><code>2px left</code></td><td><code>#F0F3F6</code></td></tr>
+      <tr><td>Strapline</td><td>400 Regular</td><td><code>12.5px</code></td><td>justified to mark</td><td><code>#C9D4DE</code></td></tr>
+      <tr><td>Protocol header</td><td>500 Medium</td><td><code>15px</code></td><td><code>0.32em</code></td><td><code>#DFE5EC</code></td></tr>
+      <tr><td>Protocol sub</td><td>Mono 400</td><td><code>10.5px</code></td><td><code>0.16em</code></td><td><code>#63768C</code></td></tr>
+      <tr><td>Timings</td><td>400, tabular</td><td><code>15px</code></td><td><code>0.02em</code></td><td><code>#8D9AA6</code></td></tr>
+      <tr><td>Protocol body</td><td>400 Regular</td><td><code>15px</code></td><td>normal</td><td><code>#DFE5EC</code></td></tr>
+      <tr><td>Dose</td><td>300, tabular</td><td><code>14px</code></td><td>normal</td><td><code>#8B97A5</code></td></tr>
+      <tr><td>Explanation</td><td>Serif 300</td><td><code>16.5px</code> / 1.72</td><td>normal</td><td><code>#A9B4C0</code></td></tr>
+      <tr><td>Pack mark</td><td>400 Regular</td><td><code>18px</code></td><td><code>0.15em</code></td><td>per pack</td></tr>
+      <tr><td>Pack variant</td><td>400 Regular</td><td><code>13px</code></td><td>normal</td><td>70% opacity</td></tr>
+      <tr><td>Pack label</td><td>Mono 400</td><td><code>10px</code></td><td><code>0.12em</code></td><td>50% opacity</td></tr>
+    </tbody>
+  </table>
+
+  <div class="tnote">
+    <p><strong>The degree does not scale proportionally.</strong> At wordmark size the ring is 9px across with a 1.9px stroke — roughly a fifth. Reduced linearly to pack size the aperture closes and it reads as a solid dot. On pack it is drawn at 5.5px with a 1px stroke instead. The same correction applies in print: below about 8mm the ring must be optically enlarged or it will fill in on foil.</p>
+    <p><strong>The strapline is tracked, not sized, to fit.</strong> It justifies to the width of the wordmark measured from the A to the 5. The degree sits outside that measure, above the cap line.</p>
+    <p><strong>Numerals are tabular</strong> wherever figures appear in a column, so timings and doses align vertically.</p>
   </div>
 </section>
 
