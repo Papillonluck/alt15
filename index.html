@@ -10,7 +10,7 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec;line-height:1.55}
+body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec;line-height:1.68}
 .page{max-width:1180px;margin:0 auto;padding:0 40px}
 
 .masthead{padding:120px 0 90px;border-bottom:1px solid #24282e}
@@ -19,7 +19,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 .masthead .note{margin-top:44px;font-size:14px;color:#7d858f;max-width:56ch;line-height:1.8}
 .masthead .note + .note{margin-top:20px}
 
-.dir{padding:110px 0;border-bottom:1px solid #24282e}
+.dir{padding:96px 0;border-bottom:1px solid #24282e}
 .dir-head{display:flex;align-items:baseline;gap:22px;margin-bottom:14px}
 .dir-num{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5c646e}
 .dir-name{font-size:24px;font-weight:600;letter-spacing:-.015em}
@@ -61,7 +61,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 .sw{flex:1;height:88px;display:flex;align-items:flex-end;padding:11px 12px}
 .sw code{font-family:'IBM Plex Mono',monospace;font-size:10px}
 
-.spec{display:grid;grid-template-columns:170px 1fr;gap:20px 44px;margin-top:46px;font-size:14px}
+.spec{display:grid;grid-template-columns:170px 1fr;gap:26px 44px;margin-top:52px;font-size:14px}
 .spec dt{color:#6e767f;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;padding-top:3px}
 .spec dd{color:#c3cad2;line-height:1.75}
 
@@ -99,12 +99,12 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 
 .tspec{width:100%;border-collapse:collapse;margin-top:44px;font-size:13.5px}
 .tspec th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;color:#5c646e;font-weight:400;padding:0 24px 14px 0;border-bottom:1px solid #24282e;white-space:nowrap}
-.tspec td{padding:16px 24px 16px 0;border-bottom:1px solid #1a1e23;color:#c3cad2;vertical-align:top;line-height:1.6}
+.tspec td{padding:19px 24px 19px 0;border-bottom:1px solid #1a1e23;color:#c3cad2;vertical-align:top;line-height:1.6}
 .tspec td:first-child{color:#e7e9ec;font-weight:500;white-space:nowrap}
 .tspec code{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#8d9aa6}
-.tnote{margin-top:34px;font-size:14px;color:#8b94a0;line-height:1.8;max-width:62ch}
+.tnote{margin-top:40px;font-size:14px;color:#a3acb7;line-height:1.85;max-width:62ch}
 .tnote strong{color:#c3cad2;font-weight:500}
-.tnote p + p{margin-top:16px}
+.tnote p + p{margin-top:20px}
 
 /* ---- circadian system ---- */
 .cyc{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:44px;border-radius:3px;overflow:hidden}
@@ -124,14 +124,14 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 .moments{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
 .mo-bar{height:5px;border-radius:2px;margin-bottom:16px;position:relative;overflow:hidden}
 .mo-bar::after{content:"";position:absolute;top:0;bottom:0;width:70%;left:-80%;
- background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.55) 50%,rgba(255,255,255,0) 100%);
+ background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255.55) 50%,rgba(255,255,255,0) 100%);
  animation:pass 9s linear infinite}
 .mo:nth-child(2) .mo-bar::after{animation-delay:-3s}
 .mo:nth-child(3) .mo-bar::after{animation-delay:-6s}
 @keyframes pass{0%{left:-90%}100%{left:110%}}
 .mo-hd{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;color:#5c646e;margin-bottom:14px}
 .mo-l{list-style:none}
-.mo-l li{font-size:14px;color:#dfe5ec;padding:11px 0;border-top:1px solid #1e232a;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.mo-l li{font-size:14px;color:#dfe5ec;padding:15px 0;border-top:1px solid #1e232a;display:flex;justify-content:space-between;align-items:baseline;gap:12px;line-height:1.5}
 .mo-l li:last-child{border-bottom:1px solid #1e232a}
 @media(prefers-reduced-motion:reduce){.mo-bar::after{animation:none;opacity:0}}
 .mo-l span{font-size:11.5px;color:#6e767f;white-space:nowrap}
@@ -145,10 +145,10 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 
 
 /* ---- stress test ---- */
-.stress{margin-top:44px;background:#12161b;border:1px solid #1f242b;border-radius:3px;padding:34px}
+.stress{margin-top:50px;background:#12161b;border:1px solid #1f242b;border-radius:3px;padding:42px}
 .st-lab{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;color:#5c646e;margin-bottom:8px}
 .st-desc{font-size:13px;color:#7d858f;margin-bottom:18px;line-height:1.6}
-.st-block{margin-bottom:40px}
+.st-block{margin-bottom:52px}
 .st-block:last-child{margin-bottom:0}
 .st-row{display:flex;gap:8px;position:relative;border-radius:3px;overflow:hidden}
 .st-pod{flex:0 0 104px;min-width:0;overflow:hidden;height:132px;border-radius:2px;padding:9px 8px;display:flex;flex-direction:column;justify-content:flex-end}
@@ -160,7 +160,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 .dimwarm::after{content:"";position:absolute;inset:0;background:#5a3410;mix-blend-mode:multiply;opacity:.55;pointer-events:none}
 .dimwarm::before{content:"";position:absolute;inset:0;background:#000;opacity:.42;pointer-events:none;z-index:2}
 .foil::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
- background:linear-gradient(104deg,rgba(255,255,255,0) 34%,rgba(255,255,255,.16) 47%,rgba(255,255,255,.03) 55%,rgba(0,0,0,.10) 68%)}
+ background:linear-gradient(104deg,rgba(255,255,255,0) 34%,rgba(255,255,255.16) 47%,rgba(255,255,255.03) 55%,rgba(0,0,0.10) 68%)}
 .st-tiny{display:flex;gap:4px}
 .st-tiny div{flex:0 0 26px;height:46px;border-radius:1px}
 
@@ -175,7 +175,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 @keyframes day{0%,26%{opacity:0}42%{opacity:1}58%{opacity:1}74%{opacity:0}100%{opacity:0}}
 @keyframes sky{0%{opacity:1}20%{opacity:1}50%{opacity:1}80%{opacity:1}100%{opacity:1}}
 .rot-haze{position:absolute;top:-30%;left:-30%;width:160%;height:160%;pointer-events:none;opacity:.14;mix-blend-mode:soft-light;
- background:radial-gradient(46% 34% at 32% 58%,rgba(255,255,255,.85) 0%,rgba(255,255,255,0) 62%),radial-gradient(38% 28% at 72% 40%,rgba(255,255,255,.55) 0%,rgba(255,255,255,0) 66%);
+ background:radial-gradient(46% 34% at 32% 58%,rgba(255,255,255.85) 0%,rgba(255,255,255,0) 62%),radial-gradient(38% 28% at 72% 40%,rgba(255,255,255.55) 0%,rgba(255,255,255,0) 66%);
  animation:haze 54s ease-in-out infinite}
 @keyframes drift{0%{transform:translate3d(0,0,0)}33%{transform:translate3d(-3.5%,2.5%,0)}66%{transform:translate3d(2.5%,-3%,0)}100%{transform:translate3d(0,0,0)}}
 @keyframes haze{0%{transform:translate3d(0,0,0) scale(1)}40%{transform:translate3d(6%,-3%,0) scale(1.08)}70%{transform:translate3d(-4%,4%,0) scale(1.04)}100%{transform:translate3d(0,0,0) scale(1)}}
@@ -184,33 +184,33 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 .rot-mark{display:inline-flex;align-items:flex-start;font-weight:400;font-size:21px;letter-spacing:.16em;line-height:1;position:relative;color:currentColor;align-self:flex-start}
 .rot-mark .deg{width:6px;height:6px;border:1px solid currentColor;border-radius:50%;position:absolute;left:100%;top:-2px;margin-left:3px}
 @keyframes ink{0%,31%{color:#ffffff}32%{color:#141c26}68%{color:#141c26}69%{color:#ffffff}100%{color:#ffffff}}
-@media(prefers-reduced-motion:reduce){.rot-warm,.rot-day,.rot-sky,.rot-inner,.rot-grain,.rot-haze{animation:none}.rot-warm{opacity:1}.rot-inner{color:#ffffff}}
+@media(prefers-reduced-motion:reduce){.rot-warm.rot-day.rot-sky.rot-inner.rot-grain.rot-haze{animation:none}.rot-warm{opacity:1}.rot-inner{color:#ffffff}}
 
 
 .ref-two{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
 .ref-card{border:1px solid #24282e;border-radius:3px;overflow:hidden}
 .ref-vis{height:190px;position:relative}
 .ref-vis::after{content:"";position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='nr'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23nr)'/%3E%3C/svg%3E")}
-.ref-body{padding:20px 22px}
+.ref-body{padding:26px 26px}
 .ref-h{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;color:#5c646e;margin-bottom:9px}
 .ref-t{font-size:14.5px;color:#c3cad2;line-height:1.7}
 @media(max-width:820px){.ref-two{grid-template-columns:1fr}}
 
 
-.sys{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:44px}
-.sys-c{border:1px solid #232830;border-radius:3px;padding:26px 24px}
+.sys{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:50px}
+.sys-c{border:1px solid #232830;border-radius:3px;padding:32px 28px}
 .sys-h{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;color:#5c646e;margin-bottom:12px}
 .sys-n{font-size:17px;font-weight:500;color:#eaeef2;margin-bottom:9px}
-.sys-t{font-size:14px;color:#a8b0ba;line-height:1.7}
+.sys-t{font-size:14px;color:#a8b0ba;line-height:1.78}
 @media(max-width:820px){.sys{grid-template-columns:1fr}}
 
 
 .tiers{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:44px}
-.tier{border:1px solid #232830;border-radius:3px;padding:28px 26px}
+.tier{border:1px solid #232830;border-radius:3px;padding:34px 30px}
 .tier-h{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;color:#5c646e;margin-bottom:14px}
 .tier-n{font-size:22px;font-weight:400;letter-spacing:.02em;color:#eaeef2;margin-bottom:14px}
 .tier-l{list-style:none}
-.tier-l li{font-size:13.5px;color:#a8b0ba;padding:8px 0;border-top:1px solid #1a1e24;line-height:1.55}
+.tier-l li{font-size:13.5px;color:#a8b0ba;padding:12px 0;border-top:1px solid #1a1e24;line-height:1.6}
 .tier-l li:first-child{border-top:none}
 @media(max-width:820px){.tiers{grid-template-columns:1fr}}
 
@@ -222,10 +222,10 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 .ph-lab{font-family:'IBM Plex Mono',monospace;font-size:8.5px;letter-spacing:.14em;opacity:.65;margin-bottom:11px}
 .ph-mark{display:inline-flex;align-items:flex-start;font-weight:400;font-size:13px;letter-spacing:.15em;position:relative;line-height:1}
 .ph-mark .deg{width:4px;height:4px;border-radius:50%;position:absolute;left:100%;top:-1px;margin-left:2px}
-.ph-for{font-family:'IBM Plex Mono',monospace;font-size:8px;letter-spacing:.15em;opacity:.6;margin-top:14px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.16)}
+.ph-for{font-family:'IBM Plex Mono',monospace;font-size:8px;letter-spacing:.15em;opacity:.6;margin-top:14px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255.16)}
 .ph-h{font-size:19px;font-weight:400;letter-spacing:-.01em;line-height:1.3;margin-top:16px}
 .ph-sub{font-size:11.5px;opacity:.72;margin-top:7px;line-height:1.5}
-.ph-row{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-top:1px solid rgba(255,255,255,.13);font-size:11.5px}
+.ph-row{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-top:1px solid rgba(255,255,255.13);font-size:11.5px}
 .ph-row:first-of-type{border-top:none}
 .ph-t{font-variant-numeric:tabular-nums;opacity:.85;width:42px}
 .ph-w{flex:1;padding-right:8px}
@@ -242,12 +242,12 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 
 @media(max-width:820px){
  .page{padding:0 24px}
- .d1-alt,.d1-num{font-size:46px}.d1-rule{margin-top:21px}.d1-deg{width:9px;height:9px;border-width:2px;margin-top:3px}
+ .d1-alt.d1-num{font-size:46px}.d1-rule{margin-top:21px}.d1-deg{width:9px;height:9px;border-width:2px;margin-top:3px}
  .d2-mark{font-size:44px}.d3-mark{font-size:40px}
  .packs{grid-template-columns:1fr}
  .spec{grid-template-columns:1fr;gap:6px 0}.spec dd{margin-bottom:18px}
  .masthead .lede{font-size:23px}
- .d1-strap,.d2-strap,.d3-strap{font-size:8px}
+ .d1-strap.d2-strap.d3-strap{font-size:8px}
  .proto{padding:36px 26px}
  .row{grid-template-columns:78px 1fr;gap:14px}
  .dose{grid-column:2;text-align:left;margin-top:3px}
@@ -261,13 +261,13 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
   <h1>ALT-15°</h1>
   <p class="lede">A travel and circadian performance system. Identity direction.</p>
   <p class="note">The strapline tracks to lock flush with the wordmark, so the two form one block. The degree sits outside that measure, above the cap line. That lockup is the unit that goes on pack.</p>
-  <p class="note">Type is Archivo, standing in for Suisse Int'l. The degree is drawn as a true circle rather than set as a glyph, so it holds its shape at 25mm on a pod lid.</p>
+  <p class="note">Type is Archivo, standing in for Suisse Int'l. The degree is drawn as a true circle rather than set as a glyph, so it holds its shape at 25mm on a sachet.</p>
 </header>
 
 <!-- 03 -->
 <section class="dir">
   <div class="dir-head"><span class="dir-num">01</span><h2 class="dir-name">The mark</h2></div>
-  <p class="dir-desc">The view. The gradient of the sky from 38,000 feet — near-black at the zenith, indigo through the middle, a pale band at the horizon. The gradient carries the world; each drink pod takes a flat solid from a different depth of it, so the darkest tone belongs to the end of the day. No gradients on moulded parts.</p>
+  <p class="dir-desc">The view. The gradient of the sky from 38,000 feet, near-black at the zenith, indigo through the middle, a pale band at the horizon. The gradient carries the world; each pack takes a flat solid from a different depth of it, so the darkest tone belongs to the end of the day. No gradients on foil or moulded parts.</p>
 
   <div class="stage d3-stage">
     <div class="lockup">
@@ -285,15 +285,15 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
   </div>
 
   <dl class="spec">
-    <dt>TYPE</dt><dd>Between light and regular, tracked wide. Enough substance to hold at 25mm on a pod lid without weighing down the field.</dd>
-    <dt>THE GRADIENT</dt><dd>A specific atmospheric condition, not a decorative wash. It lives on the box, the caddy, digital and environments.</dd>
+    <dt>TYPE</dt><dd>Between light and regular, tracked wide. Enough substance to hold at 25mm on a sachet without weighing down the field.</dd>
+    <dt>THE GRADIENT</dt><dd>A specific atmospheric condition rather than decoration. It lives on the box, the caddy, digital and environments.</dd>
     <dt>ON PACK</dt><dd>Flat solids only, each pulled from a different depth of the gradient. Straightforward to mould and print.</dd>
     <dt>SITS BESIDE</dt><dd>The gradient is dominant, so a co-brand needs room. On shared surfaces the flat solids are used instead of the gradient.</dd>
   </dl>
 
 
   <div class="scale">
-    <div class="scale-label">SCALE TEST — THE DEGREE MUST HOLD</div>
+    <div class="scale-label">SCALE TEST, THE DEGREE MUST HOLD</div>
     <div class="scale-row">
       <div><div class="sm s-a">ALT-15<span class="deg"></span></div><div class="s-cap">RIGID BOX</div></div>
       <div><div class="sm s-b">ALT-15<span class="deg"></span></div><div class="s-cap">CAPSULE POUCH</div></div>
@@ -320,19 +320,19 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 <!-- HIERARCHY -->
 <section class="hier">
   <div class="dir-head"><span class="dir-num">08</span><h2 class="dir-name">Typographic hierarchy</h2></div>
-  <p class="dir-desc">Three registers doing three jobs. Headers carry authority — medium weight, caps, tracking opened right up. Timings and doses carry precision — regular weight, tabular numerals so every figure aligns down the column. Explanations carry context in an editorial serif, which is the only soft element and appears once.</p>
+  <p class="dir-desc">Three registers doing three jobs. Headers carry authority: medium weight, caps, tracking opened right up. Timings and doses carry precision: regular weight, tabular numerals so every figure aligns down the column. Explanations carry context in an editorial serif, which is the only soft element and appears once.</p>
   <p class="dir-desc" style="margin-bottom:0">This is what makes an in-room card read as a prescription rather than a brochure.</p>
 
   <div class="proto">
     <div class="proto-head">DAY TWO</div>
     <div class="proto-sub">LONDON TO TOKYO · 9 ZONES EAST · DAY 2 OF 4</div>
 
-    <div class="row"><span class="t">07:00</span><span class="what">Health — on waking, with daylight</span><span class="dose">1 drink</span></div>
-    <div class="row"><span class="t">11:00</span><span class="what">Focus — before a meeting</span><span class="dose">1 drink</span></div>
-    <div class="row"><span class="t">15:00</span><span class="what">Energy — before training</span><span class="dose">1 drink</span></div>
-    <div class="row"><span class="t">21:30</span><span class="what">Sleep Time — as the day ends</span><span class="dose">1 drink</span></div>
+    <div class="row"><span class="t">07:00</span><span class="what">Health, on waking, with daylight</span><span class="dose">1 drink</span></div>
+    <div class="row"><span class="t">11:00</span><span class="what">Focus, before a meeting</span><span class="dose">1 drink</span></div>
+    <div class="row"><span class="t">15:00</span><span class="what">Energy, before training</span><span class="dose">1 drink</span></div>
+    <div class="row"><span class="t">21:30</span><span class="what">Sleep Time, as the day ends</span><span class="dose">1 drink</span></div>
 
-    <p class="why">Travelling east shortens the day, and the body shifts at roughly an hour a day in that direction — slower than westward, which is why nine zones would take nine days unaided. <em>Every timing above is on Tokyo clock, not London.</em> Morning light and the first drink are the two strongest signals available, and taken together they move the body clock earlier faster than either does alone.</p>
+    <p class="why">Travelling east shortens the day, and the body shifts at roughly an hour a day in that direction, slower than westward, which is why nine zones would take nine days unaided. <em>Every timing above is on Tokyo clock, not London.</em> Morning light and the first drink are the two strongest signals available, and taken together they move the body clock earlier faster than either does alone.</p>
   </div>
 </section>
 
@@ -341,7 +341,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 <!-- CIRCADIAN SYSTEM -->
 <section class="dir">
   <div class="dir-head"><span class="dir-num">02</span><h2 class="dir-name">The circadian system</h2></div>
-  <p class="dir-desc">Three times of day. Not four, not five. A protocol fails on comprehension before it fails on anything else — three is what a traveller can remember unaided, and every additional moment costs more than it adds.</p>
+  <p class="dir-desc">Three times of day. A protocol fails on comprehension before it fails on anything else. Three is what a traveller can remember unaided, and every additional moment costs more than it adds.</p>
   <p class="dir-desc">Colour carries <em>when</em>. Format carries <em>how</em>. The two signals stay independent, so Health as a drink, a capsule and a tea are all the same colour, because they are all the same moment.</p>
 
   <div class="strip"></div>
@@ -392,7 +392,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
   </div>
   <div class="tnote" style="margin-top:22px">
     <p><strong>The identity moves through the day rather than sitting still.</strong> A full rotation runs here in thirty seconds; on a live site it would run far slower, or track the traveller's actual local time. Someone reading a page for a minute sees the light change without noticing why.</p>
-    <p>The distinction from how a luxury house like Chanel animates atmosphere is that this is not an effect laid over an image. It is the same three gradients already established, cross-fading in sequence. The brand demonstrates what the product does instead of illustrating it.</p>
+    <p>A luxury house like Chanel lays the effect over an image. Here it is the same three gradients already established, cross-fading in sequence. The brand demonstrates what the product does instead of illustrating it.</p>
   </div>
 
   <div class="moments">
@@ -400,7 +400,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
       <div class="mo-bar" style="background:#8d9aa6"></div>
       <div class="mo-hd">FIRST LIGHT</div>
       <ul class="mo-l">
-        <li>Health <span>drink pod</span></li>
+        <li>Health <span>powder</span></li>
         <li>Health <span>botanical infusion tea</span></li>
         <li>Immune Support <span>capsule</span></li>
       </ul>
@@ -409,8 +409,8 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
       <div class="mo-bar" style="background:#1c3557"></div>
       <div class="mo-hd">FULL DAYLIGHT</div>
       <ul class="mo-l">
-        <li>Energy <span>drink pod</span></li>
-        <li>Focus <span>drink pod</span></li>
+        <li>Energy <span>powder</span></li>
+        <li>Focus <span>powder</span></li>
         <li>Performance <span>botanical infusion tea</span></li>
         <li>Performance <span>capsule</span></li>
       </ul>
@@ -422,7 +422,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
         <li>Recover <span>botanical infusion tea</span></li>
         <li>Recover <span>capsule</span></li>
         <li>Renew <span>capsule</span></li>
-        <li>Sleep Time <span>drink pod</span></li>
+        <li>Sleep Time <span>powder</span></li>
         <li>Sleep Time <span>capsule</span></li>
       </ul>
     </div>
@@ -433,8 +433,8 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
     <p><strong>The products sit on the cycle, they do not have their own colours.</strong> Health is first light because it is taken on waking. Rest is dark because it is taken before sleep. Nothing is assigned, so the range explains itself on a shelf without copy.</p>
     <p><strong>Each name says what the product does.</strong> Recover acts on accumulated stress load rather than sleep onset. Renew works on hair, skin and nails, which is cellular renewal and not a gendered concern. Sleep Time is named for when it is taken rather than for a benefit, which is how the whole system is built.</p>    <p><strong>Dark now holds three ideas, not five products.</strong> Recover in two formats for decompression after the day. Renew for overnight repair. Sleep Time in two formats for sleep onset. Three jobs, in the order they happen. Previously there were two sleep products under different names and a decompression product sitting beside them looking like a third option.</p>
     <p><strong>Dark carries five products, the others three each.</strong> That asymmetry is correct and should stay. Products are assigned to the moment their formulation actually belongs to, rather than created to complete a grid. Renew sits under Dark because skin barrier repair and collagen synthesis peak overnight, which is a real circadian argument rather than a convenient one.</p>
-    <p><strong>Format is carried by the object, not by colour.</strong> A drink pod, a capsule pouch and a tea envelope are already unmistakably different in the hand. Using colour for format as well would break the one rule that makes this work.</p>
-    <p><strong>Foil cannot hold a gradient.</strong> Each item takes the flat solid sampled from its moment. The gradient lives where it can be reproduced properly — the rigid box, the caddy, print, digital and environments.</p>
+    <p><strong>Format is carried by the object, not by colour.</strong> A powder sachet, a capsule pouch and a tea envelope are already unmistakably different in the hand. Using colour for format as well would break the one rule that makes this work.</p>
+    <p><strong>Foil cannot hold a gradient.</strong> Each item takes the flat solid sampled from its moment. The gradient lives where it can be reproduced properly, the rigid box, the caddy, print, digital and environments.</p>
     <p><strong>Digital can read the actual clock.</strong> A site or app takes the slice matching the traveller's local time, or their destination time. For a product about time zones that is the point rather than an effect.</p>
   </div>
 </section>
@@ -448,28 +448,30 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
   <div class="sys">
 
     <div class="sys-c">
-      <div class="sys-h">STAYS IN THE ROOM · CO-BRANDED</div>
+      <div class="sys-h">THE DAILY OBJECT · CO-BRANDED</div>
       <div class="sys-n">The bottle</div>
-      <p class="sys-t"><strong>The pod fits any bottle.</strong> It clips onto a standard neck, which is the thread on almost every bottle of water sold airside or handed out in a cabin — so a pod from an amenity kit or a hotel room works with whatever is to hand. Single-handed, no tearing, no stirring, no spillage — on a tray table at 38,000 feet with no flat surface and nothing to open a sachet with. A product built for a flight has to work on one.</p>
+      <p class="sys-t"><strong>The sachet is what exists.</strong> Single-serve printed foil, manufactured, approved and previously sold. It is the format the range ships in today and the one all the specifications and artwork are built against.</p>
+      <p class="sys-t" style="margin-top:12px"><strong>The pod is where it goes.</strong> The same formulations in a single-serve cartridge that clips onto a standard bottle neck and opens into the water. Single-handed, nothing to tear, stir or spill, which matters on a tray table, in a club, in a car or walking through a terminal. In development, and the intended successor rather than a second line to carry indefinitely.</p>
+      <p class="sys-t" style="margin-top:12px"><strong>The pod fits any bottle.</strong> A standard neck is the thread on almost every bottle of water sold airside or handed out in a cabin, so a pod from an amenity kit works with whatever is to hand, with nothing to carry.</p>
       <p class="sys-t" style="margin-top:12px"><strong>The ALT-15° bottle is the one you want.</strong> Same standard neck, but with the circadian markings running up the side showing the three moments rather than clock hours. It sits in the room, travels with the case, and carries the hotel's mark alongside ALT-15°. The system never depends on it, which is exactly why someone buys one.</p>
     </div>
 
     <div class="sys-c">
       <div class="sys-h">STAYS IN THE ROOM</div>
       <div class="sys-n">The room</div>
-      <p class="sys-t">Drink pods and tea envelopes only. A drink pod is still a supplement and carries the same allergen and labelling obligations, but it presents as a drink — and hotels have already accepted functional drinks, electrolytes and wellness shots into minibar retail. A capsule looks like medication and sits outside that precedent, which makes it a harder thing for a hotel to sign off. Capsules belong in the case someone buys, not in the room.</p>
+      <p class="sys-t">Powders and tea envelopes only. A powder is still a supplement and carries the same allergen and labelling obligations, but it presents as a drink, and hotels have already accepted functional drinks, electrolytes and wellness shots into minibar retail. A capsule looks like medication and sits outside that precedent, which makes it a harder thing for a hotel to sign off. Capsules belong in the case someone buys, not in the room.</p>
     </div>
 
     <div class="sys-c">
       <div class="sys-h">TRAVELS · RETAIL</div>
       <div class="sys-n">The journey</div>
-      <p class="sys-t">Soft leather, rolling or zipping closed like a document folder rather than a washbag. Sold with the bottle as the opening set. The internal sections have to flex — someone who does not take capsules should not be left with an empty compartment, so each section should hold more than one format. It has to look completely at ease in the spa at Claridge's, at Rosewood, or at The OWO.</p>
+      <p class="sys-t">Soft leather, rolling or zipping closed like a document folder rather than a washbag. Sold with the bottle as the opening set. The internal sections have to flex. Someone who does not take capsules should not be left with an empty compartment, so each section should hold more than one format. It has to look completely at ease in the spa at Claridge's, at Rosewood, or at The OWO.</p>
     </div>
 
     <div class="sys-c">
       <div class="sys-h">CARRIED · ALT-15° RESERVE</div>
       <div class="sys-n">The membership</div>
-      <p class="sys-t">Metal, in the register of a black card rather than a loyalty card. It carries membership of <strong>ALT-15° Reserve</strong> — the concierge tier: protocol access, refill ordering, in-room service, and schedule optimisation managed with the traveller's assistant. Membership rather than purchase, which is the model the hospitality partner already sells.</p>
+      <p class="sys-t">Metal, in the register of a black card rather than a loyalty card. It carries membership of <strong>ALT-15° Reserve</strong>, the concierge tier: protocol access, refill ordering, in-room service, and schedule optimisation managed with the traveller's assistant. Membership rather than purchase, which is the model the hospitality partner already sells.</p>
     </div>
 
   </div>
@@ -477,9 +479,9 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
   <div class="tnote" style="margin-top:34px">
     <p><strong>How the two brands sit together is the partner's decision.</strong> Three structures work, and the assets support all of them.</p>
     <p><strong>Co-branded.</strong> Both marks present, side by side. The partner's name carries the credibility with their own members and guests; ALT-15° carries the system and the science. Most common where a partner wants the proposition to feel considered rather than invented in-house.</p>
-    <p><strong>Endorsed.</strong> ALT-15° leads, with the partner's mark as the endorsement — the way a hotel presents a spa brand it has brought in. Keeps ALT-15° as a distinct thing a guest can buy and take home.</p>
+    <p><strong>Endorsed.</strong> ALT-15° leads, with the partner's mark as the endorsement, the way a hotel presents a spa brand it has brought in. Keeps ALT-15° as a distinct thing a guest can buy and take home.</p>
     <p><strong>Absorbed.</strong> The partner renames it entirely and runs it as their own. Everything transfers, including the identity, so this is available if they would rather own the name outright.</p>
-    <p>The durable objects — bottle, caddy, case — are where a partner mark sits most naturally, because those are what a guest sees every day and takes home. But that follows from whichever structure they choose rather than deciding it.</p>
+    <p>The durable objects, bottle, caddy, case, are where a partner mark sits most naturally, because those are what a guest sees every day and takes home. But that follows from whichever structure they choose rather than deciding it.</p>
   </div>
 </section>
 
@@ -488,9 +490,9 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 <!-- APP -->
 <section class="dir">
   <div class="dir-head"><span class="dir-num">05</span><h2 class="dir-name">The app</h2></div>
-  <p class="dir-desc">A few hours of lost sleep combined with business travel measurably reduces cognitive performance — and the executive is the last person to notice, consistently rating themselves far higher than they are actually performing. Decision-making, attention to detail and speed all fall, and they fall silently.</p>
-  <p class="dir-desc">The app exists to put the moments that matter where the capability still is. It times the protocol precisely — what to take and exactly when, on destination clock, adjusted daily as the body catches up. But that is one output of a much larger calculation.</p>
-  <p class="dir-desc">Which flight to take, and which to refuse. What order to visit cities on a multi-stop trip so the schedule works with the body rather than against it. Which hotel, judged on what its rooms and facilities actually do for recovery. And then the decision the whole trip turns on: the hour on which cognitive performance peaks, so the negotiation, the pitch or the board meeting is held when the executive is genuinely capable of it — and the hours to leave empty, because no executive should be making consequential decisions on landing.</p>
+  <p class="dir-desc">A few hours of lost sleep combined with business travel measurably reduces cognitive performance, and the executive is the last person to notice, consistently rating themselves far higher than they are actually performing. Decision-making, attention to detail and speed all fall, and they fall silently.</p>
+  <p class="dir-desc">The app exists to put the moments that matter where the capability still is. It times the protocol precisely, what to take and exactly when, on destination clock, adjusted daily as the body catches up. But that is one output of a much larger calculation.</p>
+  <p class="dir-desc">Which flight to take, and which to refuse. What order to visit cities on a multi-stop trip so the schedule works with the body rather than against it. Which hotel, judged on what its rooms and facilities actually do for recovery. And then the decision the whole trip turns on: the hour on which cognitive performance peaks, so the negotiation, the pitch or the board meeting is held when the executive is genuinely capable of it, and the hours to leave empty, because no executive should be making consequential decisions on landing.</p>
   <p class="dir-desc">Around that: light, sleep, food, caffeine, movement and the protocol timings. Six layers, one clock, sequenced across pre-travel, in-transit and arrival.</p>
   <p class="dir-desc"><strong>Two people use it, for two different things.</strong> The assistant uses it before the trip, to decide which flights to take and where in the day to put the meeting that matters. The traveller uses it during the trip, to follow the day that has been built around that meeting. The same calculation, delivered twice.</p>
   <p class="dir-desc">No sensors, no pairing, no connection to the bottle. The interface takes its colour from where the traveller is in the day, so the screen is the circadian system rather than a display of it.</p>
@@ -515,26 +517,26 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
     <div class="phone" style="background:linear-gradient(178deg in oklab,#8a7b85 0%,#a8878a 26%,#c49a8a 54%,#d8ab93 78%,#e8c4a6 100%);color:#241d1c">
       <div class="ph-top">
         <div class="ph-mark" style="color:#ffffff">ALT-15<span class="deg" style="border:1px solid #ffffff"></span></div>
-        <div class="ph-for" style="border-bottom-color:rgba(255,255,255,.28);color:#ffffff;opacity:.75">ASSISTANT · BOOKING THE TRIP</div>
+        <div class="ph-for" style="border-bottom-color:rgba(255,255,255.28);color:#ffffff;opacity:.75">ASSISTANT · BOOKING THE TRIP</div>
         <div class="ph-h" style="color:#ffffff">Peak windows</div>
         <div class="ph-sub" style="color:#ffffff;opacity:.88">When cognitive performance peaks, so the meeting the trip exists for is scheduled against it.</div>
         <div class="ph-sub" style="color:#ffffff;opacity:.72;margin-top:9px">Morning light shifts your body clock earlier. Evening light pushes it later.</div>
       </div>
       <div class="ph-body">
         <div class="ph-lab">DAY 2 · WINDOWS</div>
-        <div class="ph-row"><span class="ph-t">09:00</span><span class="ph-w">Low — do not schedule</span><span class="ph-d">avoid</span></div>
+        <div class="ph-row"><span class="ph-t">09:00</span><span class="ph-w">Low, do not schedule</span><span class="ph-d">avoid</span></div>
         <div class="ph-row"><span class="ph-t">11:00</span><span class="ph-w">Rising</span><span class="ph-d">workable</span></div>
-        <div class="ph-row"><span class="ph-t">12:30</span><span class="ph-w">Walking meeting — daylight</span><span class="ph-d">book</span></div>
-        <div class="ph-row"><span class="ph-t">14:30</span><span class="ph-w"><strong>Peak — board meeting</strong></span><span class="ph-d">book</span></div>
+        <div class="ph-row"><span class="ph-t">12:30</span><span class="ph-w">Walking meeting, daylight</span><span class="ph-d">book</span></div>
+        <div class="ph-row"><span class="ph-t">14:30</span><span class="ph-w"><strong>Peak, board meeting</strong></span><span class="ph-d">book</span></div>
         <div class="ph-row"><span class="ph-t">16:30</span><span class="ph-w">Second window</span><span class="ph-d">workable</span></div>
-        <div class="ph-row"><span class="ph-t">18:00</span><span class="ph-w">Falling — no decisions</span><span class="ph-d">avoid</span></div>
+        <div class="ph-row"><span class="ph-t">18:00</span><span class="ph-w">Falling, no decisions</span><span class="ph-d">avoid</span></div>
       </div>
     </div>
 
     <div class="phone" style="background:linear-gradient(178deg in oklab,#6d8ca8 0%,#9db6c8 34%,#c3d2dc 64%,#dde8ee 86%,#eff5f8 100%);color:#1b2733">
       <div class="ph-top">
         <div class="ph-mark" style="color:#ffffff">ALT-15<span class="deg" style="border:1px solid #ffffff"></span></div>
-        <div class="ph-for" style="border-bottom-color:rgba(255,255,255,.3);color:#ffffff;opacity:.78">TRAVELLER · ON THE DAY</div>
+        <div class="ph-for" style="border-bottom-color:rgba(255,255,255.3);color:#ffffff;opacity:.78">TRAVELLER · ON THE DAY</div>
         <div class="ph-h" style="color:#ffffff">Day 2 · Tokyo</div>
         <div class="ph-sub" style="color:#ffffff;opacity:.9">Light, food, movement and the protocol, built around the 14:30 meeting.</div>
       </div>
@@ -561,7 +563,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
         <div class="ph-sub">How far the body clock is from local time, and how fast it is closing.</div>
         <div class="curve">
           <svg viewBox="0 0 300 60" preserveAspectRatio="none">
-            <line x1="0" y1="52" x2="300" y2="52" stroke="rgba(219,226,235,.22)" stroke-width="1"/>
+            <line x1="0" y1="52" x2="300" y2="52" stroke="rgba(219,226,235.22)" stroke-width="1"/>
             <path d="M4 8 C 70 12, 110 26, 150 34 S 240 50, 296 52" fill="none" stroke="#8d9aa6" stroke-width="1.6" stroke-linecap="round"/>
             <circle cx="110" cy="25" r="3.5" fill="#dfb18c"/>
           </svg>
@@ -580,9 +582,9 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
   </div>
 
   <div class="tnote" style="margin-top:34px">
-    <p><strong>The assistant's screen is the product.</strong> Knowing that 14:30 on day two is the only hour worth scheduling a board meeting into — and that nine in the morning is worthless whatever the diary says — is worth more to an executive than any supplement. Everything else in the app exists to widen that window and hold it open.</p>
-    <p><strong>Light is an instruction, not a note.</strong> Timed light exposure is the strongest signal the body clock receives, stronger than anything ingested. It sits in the same list as everything else because it does more of the work.</p>
-    <p><strong>The protocol is one layer of six.</strong> Light, sleep, food, caffeine, movement and the products, all timed against the same clock. The app schedules the products precisely — but a system that only did that would be ignoring most of what actually shifts a body clock, and an executive would notice.</p>
+    <p><strong>The assistant's screen is the product.</strong> Knowing that 14:30 on day two is the only hour worth scheduling a board meeting into, and that nine in the morning is worthless whatever the diary says, is worth more to an executive than any supplement. Everything else in the app exists to widen that window and hold it open.</p>
+    <p><strong>Light is treated as an instruction.</strong> Timed light exposure is the strongest signal the body clock receives, stronger than anything ingested. It sits in the same list as everything else because it does more of the work.</p>
+    <p><strong>The protocol is one layer of six.</strong> Light, sleep, food, caffeine, movement and the products, all timed against the same clock. The app schedules the products precisely, but a system that only did that would be ignoring most of what actually shifts a body clock, and an executive would notice.</p>
     <p><strong>ALT-15° Reserve is the same calculation, run by a person.</strong> At the concierge tier the output does not arrive as a screen. It goes to the traveller\'s assistant as a schedule: which flights, in what order, which hotel, when to hold the meeting that matters, and when to hold nothing at all.</p>
   </div>
 </section>
@@ -591,14 +593,14 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 <section class="dir">
   <div class="dir-head"><span class="dir-num">06</span><h2 class="dir-name">Brand architecture</h2></div>
   <p class="dir-desc">One name, one tier above it. Everything a traveller can buy carries ALT-15°. The concierge service sits above as ALT-15° Reserve.</p>
-  <p class="dir-desc">Splitting the app or the protocol into separately named products would divide attention and build two brands on one budget. The structure below is the one used by houses that sell access — a parent brand everyone recognises, and a single named tier that signals it.</p>
+  <p class="dir-desc">Splitting the app or the protocol into separately named products would divide attention and build two brands on one budget. The structure below is the one used by houses that sell access, a parent brand everyone recognises, and a single named tier that signals it.</p>
 
   <div class="tiers">
     <div class="tier">
       <div class="tier-h">THE BRAND</div>
       <div class="tier-n">ALT-15°</div>
       <ul class="tier-l">
-        <li>The full range — drink pods, capsules, botanical infusion teas</li>
+        <li>The full range, powders, capsules, botanical infusion teas</li>
         <li>The three-moment protocol</li>
         <li>The bottle, the caddy, the case</li>
         <li>The app, which calculates the protocol against a specific journey</li>
@@ -617,7 +619,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
   </div>
 
   <div class="tnote" style="margin-top:34px">
-    <p><strong>Reserve carries three meanings at once</strong> — something held back and exclusive, the act of reserving travel, and the reserves a trip spends. It is the register luxury already uses for its highest tier, so it needs no explanation.</p>
+    <p><strong>Reserve carries three meanings at once</strong>, something held back and exclusive, the act of reserving travel, and the reserves a trip spends. It is the register luxury already uses for its highest tier, so it needs no explanation.</p>
     <p><strong>And it needs no separate registration.</strong> Reserve is a descriptive tier indicator, protected by the ALT-15° mark above it, which is cleared in Class 5 across the USPTO, UKIPO, EUIPO and WIPO registers. One mark to own, maintain and enforce.</p>
   </div>
 </section>
@@ -625,7 +627,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 <!-- STRESS TEST -->
 <section class="dir">
   <div class="dir-head"><span class="dir-num">07</span><h2 class="dir-name">Separation under real conditions</h2></div>
-  <p class="dir-desc">The three flats are only useful if a traveller can pick the right one without reading it. These are approximations on a backlit screen, not proofs — the real test is a printed pod under the actual lights. What they do show is whether Health and Rest converge, which is the failure mode worth watching now that both sit dark.</p>
+  <p class="dir-desc">The three flats are only useful if a traveller can pick the right one without reading it. These are approximations on a backlit screen, not proofs, the real test is a printed pod under the actual lights. What they do show is whether Health and Rest converge, which is the failure mode worth watching now that both sit dark.</p>
 
   <div class="stress">
 
@@ -684,7 +686,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 
   <div class="tnote" style="margin-top:34px">
     <p><strong>What to look for.</strong> Performance holds in every condition. The question is Health against Rest in rows 03 and 04, where warmth and low light strip out the blue difference and leave only lightness.</p>
-    <p><strong>If they converge</strong>, the correction is to lift Health rather than redesign anything. Pre-dawn light is not black — it already has a grey-blue lift in it, so raising Health a step or two is honest to the moment and does not touch the concept. Rest stays where it is; night should be the darkest thing in the range.</p>
+    <p><strong>If they converge</strong>, the correction is to lift Health rather than redesign anything. Pre-dawn light is not black, it already has a grey-blue lift in it, so raising Health a step or two is honest to the moment and does not touch the concept. Rest stays where it is; night should be the darkest thing in the range.</p>
     <p><strong>If they hold</strong>, the palette is locked. Screen approximations are not proofs, so the last check is a printed sample under a 2700K bulb before anything goes to tooling.</p>
   </div>
 </section>
@@ -695,9 +697,9 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
   <p class="dir-desc">Everything needed to rebuild this exactly. Values are as drawn on this page.</p>
 
   <div class="tnote">
-    <p><strong>Primary typeface — Suisse Int'l</strong> (Swiss Typefaces). A neo-grotesque in the Helvetica and Univers line, with circular counters and a robust regular weight that holds on screen and in small print. Licensed, roughly £200–400 for two weights.</p>
-    <p><strong>Stand-in used here — Archivo</strong> (Google Fonts, free). Closest open-source match on x-height, counter shape and tracking behaviour. Inter is an alternative. Swapping to Suisse Int'l should be near-invisible.</p>
-    <p><strong>Secondary — Newsreader</strong> for the one editorial serif passage. The licensed pairing would be Suisse Works. <strong>Data labels — IBM Plex Mono</strong>; the licensed pairing would be Suisse Int'l Mono.</p>
+    <p><strong>Primary typeface, Suisse Int'l</strong> (Swiss Typefaces). A neo-grotesque in the Helvetica and Univers line, with circular counters and a robust regular weight that holds on screen and in small print. Licensed, roughly £200–400 for two weights.</p>
+    <p><strong>Stand-in used here, Archivo</strong> (Google Fonts, free). Closest open-source match on x-height, counter shape and tracking behaviour. Inter is an alternative. Swapping to Suisse Int'l should be near-invisible.</p>
+    <p><strong>Secondary, Newsreader</strong> for the one editorial serif passage. The licensed pairing would be Suisse Works. <strong>Data labels, IBM Plex Mono</strong>; the licensed pairing would be Suisse Int'l Mono.</p>
   </div>
 
   <table class="tspec">
@@ -719,7 +721,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
   </table>
 
   <div class="tnote">
-    <p><strong>The degree does not scale proportionally.</strong> At wordmark size the ring is 9px across with a 1.9px stroke — roughly a fifth. Reduced linearly to pack size the aperture closes and it reads as a solid dot. On pack it is drawn at 5.5px with a 1px stroke instead. The same correction applies in print: below about 8mm the ring must be optically enlarged or it will fill in.</p>
+    <p><strong>The degree does not scale proportionally.</strong> At wordmark size the ring is 9px across with a 1.9px stroke, roughly a fifth. Reduced linearly to pack size the aperture closes and it reads as a solid dot. On pack it is drawn at 5.5px with a 1px stroke instead. The same correction applies in print: below about 8mm the ring must be optically enlarged or it will fill in.</p>
     <p><strong>The strapline is tracked, not sized, to fit.</strong> It justifies to the width of the wordmark measured from the A to the 5. The degree sits outside that measure, above the cap line.</p>
     <p><strong>Numerals are tabular</strong> wherever figures appear in a column, so timings and doses align vertically.</p>
   </div>
@@ -728,8 +730,8 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 
 <!-- REFERENCE -->
 <section class="dir">
-  <div class="dir-head"><span class="dir-num">10</span><h2 class="dir-name">Where this came from</h2></div>
-  <p class="dir-desc">The starting point was a Chanel email — an autumn campaign built on a soft pastel sunrise, and a second on light across water, both animated so the light moves. No product in the hero image at all. The atmosphere carries the whole message and the products sit inside the world it creates.</p>
+  <div class="dir-head"><span class="dir-num">10</span><h2 class="dir-name">Origin</h2></div>
+  <p class="dir-desc">The starting point was a Chanel email, an autumn campaign built on a soft pastel sunrise, and a second on light across water, both animated so the light moves. No product in the hero image at all. The atmosphere carries the whole message and the products sit inside the world it creates.</p>
   <p class="dir-desc">Two things were worth taking. That a house at the very top of luxury uses atmospheric light rather than ornament, so the register is proven rather than risky. And that quiet typography over a strong field reads as more expensive than the reverse.</p>
 
   <div class="ref-two">
@@ -737,7 +739,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
       <div class="ref-vis" style="background:linear-gradient(168deg in oklab,#d8dee6 0%,#c9cfd8 30%,#b9bfc9 62%,#9aa3b0 100%)"></div>
       <div class="ref-body">
         <div class="ref-h">WHAT A LUXURY HOUSE DOES</div>
-        <p class="ref-t">Imagery changes by season or campaign. Chanel's autumn sunrise and its summer sea share nothing but the name above them. The light is chosen because it is beautiful, which is a perfectly good reason — but it means each image is unrelated to the last.</p>
+        <p class="ref-t">Imagery changes by season or campaign. Chanel's autumn sunrise and its summer sea share nothing but the name above them. The light is chosen because it is beautiful, which is a perfectly good reason, but it means each image is unrelated to the last.</p>
       </div>
     </div>
     <div class="ref-card">
@@ -755,8 +757,8 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 </section>
 
 <footer class="footer">
-  <p><strong>What this is.</strong> A direction, not a finished identity. Set in a stand-in typeface and would be redrawn as custom letterforms before production.</p>
-  <p><strong>What comes next.</strong> The mark becomes the constant in every environment frame — the same lockup, at the right scale, on the tray table, on the caddy, in the room.</p>
+  <p><strong>What this is.</strong> A direction. Set in a stand-in typeface, and the letterforms would be redrawn before production.</p>
+  <p><strong>What comes next.</strong> The mark becomes the constant in every environment frame, the same lockup, at the right scale, on the tray table, on the caddy, in the room.</p>
 </footer>
 
 </div>
