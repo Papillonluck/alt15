@@ -124,7 +124,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 .moments{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
 .mo-bar{height:5px;border-radius:2px;margin-bottom:16px;position:relative;overflow:hidden}
 .mo-bar::after{content:"";position:absolute;top:0;bottom:0;width:70%;left:-80%;
- background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255.55) 50%,rgba(255,255,255,0) 100%);
+ background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.55) 50%,rgba(255,255,255,0) 100%);
  animation:pass 9s linear infinite}
 .mo:nth-child(2) .mo-bar::after{animation-delay:-3s}
 .mo:nth-child(3) .mo-bar::after{animation-delay:-6s}
@@ -160,7 +160,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 .dimwarm::after{content:"";position:absolute;inset:0;background:#5a3410;mix-blend-mode:multiply;opacity:.55;pointer-events:none}
 .dimwarm::before{content:"";position:absolute;inset:0;background:#000;opacity:.42;pointer-events:none;z-index:2}
 .foil::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
- background:linear-gradient(104deg,rgba(255,255,255,0) 34%,rgba(255,255,255.16) 47%,rgba(255,255,255.03) 55%,rgba(0,0,0.10) 68%)}
+ background:linear-gradient(104deg,rgba(255,255,255,0) 34%,rgba(255,255,255,.16) 47%,rgba(255,255,255,.03) 55%,rgba(0,0,0,.10) 68%)}
 .st-tiny{display:flex;gap:4px}
 .st-tiny div{flex:0 0 26px;height:46px;border-radius:1px}
 
@@ -175,7 +175,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 @keyframes day{0%,26%{opacity:0}42%{opacity:1}58%{opacity:1}74%{opacity:0}100%{opacity:0}}
 @keyframes sky{0%{opacity:1}20%{opacity:1}50%{opacity:1}80%{opacity:1}100%{opacity:1}}
 .rot-haze{position:absolute;top:-30%;left:-30%;width:160%;height:160%;pointer-events:none;opacity:.14;mix-blend-mode:soft-light;
- background:radial-gradient(46% 34% at 32% 58%,rgba(255,255,255.85) 0%,rgba(255,255,255,0) 62%),radial-gradient(38% 28% at 72% 40%,rgba(255,255,255.55) 0%,rgba(255,255,255,0) 66%);
+ background:radial-gradient(46% 34% at 32% 58%,rgba(255,255,255,.85) 0%,rgba(255,255,255,0) 62%),radial-gradient(38% 28% at 72% 40%,rgba(255,255,255,.55) 0%,rgba(255,255,255,0) 66%);
  animation:haze 54s ease-in-out infinite}
 @keyframes drift{0%{transform:translate3d(0,0,0)}33%{transform:translate3d(-3.5%,2.5%,0)}66%{transform:translate3d(2.5%,-3%,0)}100%{transform:translate3d(0,0,0)}}
 @keyframes haze{0%{transform:translate3d(0,0,0) scale(1)}40%{transform:translate3d(6%,-3%,0) scale(1.08)}70%{transform:translate3d(-4%,4%,0) scale(1.04)}100%{transform:translate3d(0,0,0) scale(1)}}
@@ -222,10 +222,10 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
 .ph-lab{font-family:'IBM Plex Mono',monospace;font-size:8.5px;letter-spacing:.14em;opacity:.65;margin-bottom:11px}
 .ph-mark{display:inline-flex;align-items:flex-start;font-weight:400;font-size:13px;letter-spacing:.15em;position:relative;line-height:1}
 .ph-mark .deg{width:4px;height:4px;border-radius:50%;position:absolute;left:100%;top:-1px;margin-left:2px}
-.ph-for{font-family:'IBM Plex Mono',monospace;font-size:8px;letter-spacing:.15em;opacity:.6;margin-top:14px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255.16)}
+.ph-for{font-family:'IBM Plex Mono',monospace;font-size:8px;letter-spacing:.15em;opacity:.6;margin-top:14px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.16)}
 .ph-h{font-size:19px;font-weight:400;letter-spacing:-.01em;line-height:1.3;margin-top:16px}
 .ph-sub{font-size:11.5px;opacity:.72;margin-top:7px;line-height:1.5}
-.ph-row{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-top:1px solid rgba(255,255,255.13);font-size:11.5px}
+.ph-row{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-top:1px solid rgba(255,255,255,.13);font-size:11.5px}
 .ph-row:first-of-type{border-top:none}
 .ph-t{font-variant-numeric:tabular-nums;opacity:.85;width:42px}
 .ph-w{flex:1;padding-right:8px}
@@ -517,7 +517,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
     <div class="phone" style="background:linear-gradient(178deg in oklab,#8a7b85 0%,#a8878a 26%,#c49a8a 54%,#d8ab93 78%,#e8c4a6 100%);color:#241d1c">
       <div class="ph-top">
         <div class="ph-mark" style="color:#ffffff">ALT-15<span class="deg" style="border:1px solid #ffffff"></span></div>
-        <div class="ph-for" style="border-bottom-color:rgba(255,255,255.28);color:#ffffff;opacity:.75">ASSISTANT · BOOKING THE TRIP</div>
+        <div class="ph-for" style="border-bottom-color:rgba(255,255,255,.28);color:#ffffff;opacity:.75">ASSISTANT · BOOKING THE TRIP</div>
         <div class="ph-h" style="color:#ffffff">Peak windows</div>
         <div class="ph-sub" style="color:#ffffff;opacity:.88">When cognitive performance peaks, so the meeting the trip exists for is scheduled against it.</div>
         <div class="ph-sub" style="color:#ffffff;opacity:.72;margin-top:9px">Morning light shifts your body clock earlier. Evening light pushes it later.</div>
@@ -536,7 +536,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
     <div class="phone" style="background:linear-gradient(178deg in oklab,#6d8ca8 0%,#9db6c8 34%,#c3d2dc 64%,#dde8ee 86%,#eff5f8 100%);color:#1b2733">
       <div class="ph-top">
         <div class="ph-mark" style="color:#ffffff">ALT-15<span class="deg" style="border:1px solid #ffffff"></span></div>
-        <div class="ph-for" style="border-bottom-color:rgba(255,255,255.3);color:#ffffff;opacity:.78">TRAVELLER · ON THE DAY</div>
+        <div class="ph-for" style="border-bottom-color:rgba(255,255,255,.3);color:#ffffff;opacity:.78">TRAVELLER · ON THE DAY</div>
         <div class="ph-h" style="color:#ffffff">Day 2 · Tokyo</div>
         <div class="ph-sub" style="color:#ffffff;opacity:.9">Light, food, movement and the protocol, built around the 14:30 meeting.</div>
       </div>
@@ -563,7 +563,7 @@ body{font-family:'Archivo',system-ui,sans-serif;background:#0d0f12;color:#e7e9ec
         <div class="ph-sub">How far the body clock is from local time, and how fast it is closing.</div>
         <div class="curve">
           <svg viewBox="0 0 300 60" preserveAspectRatio="none">
-            <line x1="0" y1="52" x2="300" y2="52" stroke="rgba(219,226,235.22)" stroke-width="1"/>
+            <line x1="0" y1="52" x2="300" y2="52" stroke="rgba(219,226,235,.22)" stroke-width="1"/>
             <path d="M4 8 C 70 12, 110 26, 150 34 S 240 50, 296 52" fill="none" stroke="#8d9aa6" stroke-width="1.6" stroke-linecap="round"/>
             <circle cx="110" cy="25" r="3.5" fill="#dfb18c"/>
           </svg>
