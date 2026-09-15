@@ -52,6 +52,7 @@ h1 span{color:#a8b0ba}
 
 .cta-row{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
 .cta-note{margin-top:22px;font-size:13px;color:#7d858f;max-width:44ch;line-height:1.65;text-wrap:balance}
+.ld-a,.ld-b{display:block}
 .btn{display:inline-block;padding:16px 26px;border-radius:3px;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.24em;
  text-decoration:none;transition:background .2s,border-color .2s}
 .btn-p{background:#e7ebf0;color:#11151c;font-weight:500}
@@ -224,6 +225,7 @@ h3{max-width:none}
  background:linear-gradient(90deg in oklab,#04060e 0%,#1b2c4c 6%,#8a7b85 12%,#dfb18c 18%,#c3d2dc 26%,#eff5f8 32%,#c3d2dc 38%,#8a7b85 44%,#1b2c4c 50%,#04060e 56%,#1b2c4c 62%,#8a7b85 68%,#dfb18c 74%,#c3d2dc 82%,#eff5f8 88%,#c3d2dc 94%,#8a7b85 100%);
  background-size:200% 100%;animation:jday 34s linear infinite}
 @keyframes jday{0%{background-position:0% 0}100%{background-position:-200% 0}}
+@keyframes jdayv{0%{background-position:0 0%}100%{background-position:0 -200%}}
 .j-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
 .j-col{padding:0 14px;position:relative}
 .j-col:first-child{padding-left:0}
@@ -271,7 +273,8 @@ h3{max-width:none}
 
 .tl{margin:44px 0 40px;position:relative;padding-left:38px}
 .tl:before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;
- background:linear-gradient(180deg in oklab,#1b2c4c 0%,#8a7b85 22%,#dfb18c 38%,#c3d2dc 56%,#8d9aa6 74%,#33477a 100%)}
+ background:linear-gradient(180deg in oklab,#04060e 0%,#1b2c4c 6%,#8a7b85 12%,#dfb18c 18%,#c3d2dc 26%,#eff5f8 32%,#c3d2dc 38%,#8a7b85 44%,#1b2c4c 50%,#04060e 56%,#1b2c4c 62%,#8a7b85 68%,#dfb18c 74%,#c3d2dc 82%,#eff5f8 88%,#c3d2dc 94%,#8a7b85 100%);
+ background-size:100% 200%;animation:jdayv 34s linear infinite}
 .tl-r{position:relative;padding:0 0 38px 0;max-width:62ch;opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
 .tl-r.on{opacity:1;transform:none}
 .tl-r:last-child{padding-bottom:0}
@@ -340,7 +343,7 @@ h3{max-width:none}
 @keyframes iday{0%,26%{opacity:0}35%{opacity:1}41%{opacity:1}50%{opacity:0}100%{opacity:0}}
 @keyframes imark{0%,56%{opacity:0}66%{opacity:1}84%{opacity:1}92%{opacity:0}100%{opacity:0}}
 @keyframes lift{0%,84%{opacity:1}100%{opacity:0}}
-@media(prefers-reduced-motion:reduce){.intro{display:none}.tl-r{opacity:1;transform:none}.tl-img img,.tl-c{opacity:1;transform:none}.j-line,.tick-a,.tick-b{animation:none}}
+@media(prefers-reduced-motion:reduce){.intro{display:none}.tl-r{opacity:1;transform:none}.tl-img img,.tl-c{opacity:1;transform:none}.j-line,.tick-a,.tick-b,.j-grid:before,.tl:before{animation:none}}
 
 @media(max-width:900px){
  .j-grid{grid-template-columns:1fr}
@@ -447,7 +450,11 @@ h3{max-width:none}
   .founder-r{font-size:11px}
   .j-grid{position:relative;padding-left:30px;grid-template-columns:1fr}
   .j-grid:before{content:"";position:absolute;left:5px;top:14px;bottom:14px;width:1px;
-    background:linear-gradient(180deg in oklab,#1b2c4c 0%,#8a7b85 22%,#dfb18c 38%,#c3d2dc 56%,#8d9aa6 74%,#33477a 100%)}
+    background:linear-gradient(180deg in oklab,#04060e 0%,#1b2c4c 6%,#8a7b85 12%,#dfb18c 18%,#c3d2dc 26%,#eff5f8 32%,#c3d2dc 38%,#8a7b85 44%,#1b2c4c 50%,#04060e 56%,#1b2c4c 62%,#8a7b85 68%,#dfb18c 74%,#c3d2dc 82%,#eff5f8 88%,#c3d2dc 94%,#8a7b85 100%);
+    background-size:100% 200%;animation:jdayv 34s linear infinite}
+  .head{padding-bottom:8px}
+  .ld-a,.ld-b{display:inline}
+  .cc{gap:64px}
   .j-col{position:relative;padding:26px 0 4px;border-top:0}
   .j-line{display:none}
   .j-dot,
@@ -461,7 +468,7 @@ h3{max-width:none}
   .tick-n{font-size:11px;color:#7d858f}
   .q-sp{margin-top:92px;margin-bottom:92px}
   .ft-cl{font-size:10.5px;color:#a8b0ba}
-  .ft-links{font-size:11px;gap:22px;row-gap:6px}
+  .ft-links{font-size:10px;letter-spacing:.03em;gap:12px;flex-wrap:nowrap;white-space:nowrap}
   .ft-links a{color:#a8b0ba;display:inline-block;padding:11px 0}
   .ft-legal{font-size:11.5px;color:#7d858f}
   .ft-note{font-size:13.5px;color:#a8b0ba}
@@ -538,7 +545,7 @@ setTimeout(d,7600);})();</script>
 <section>
   <div class="page">
     <h2>The circadian system</h2>
-    <h3>Three critical moments in your day</h3>
+    <h3>Three critical moments in your day.</h3>
     <p class="lead">The body runs on a clock. Sleep, metabolism, hormone release, immune function and repair are all timed by it, and timed to each other. Crossing time zones forces that clock out of alignment, and the systems depending on it fall out of step with one another. The clock itself is set by light.</p>
 
     <p>ALT&#8209;15° organises the traveller&#39;s day around three critical moments: First Light, Full Daylight and Dark. The timing moves with the traveller, not simply what the local clock says.</p>
@@ -672,7 +679,7 @@ setTimeout(d,7600);})();</script>
 <section>
   <div class="page">
     <h2>The cumulative effect</h2>
-    <h3><span style="display:block">Across the year.</span><span style="display:block;color:#a8b0ba">Not one trip at a time</span></h3>
+    <h3><span style="display:block">Across the year.</span><span style="display:block;color:#a8b0ba">Not one trip at a time.</span></h3>
 
     <div class="rot">
       <div class="rot-sky"></div><div class="rot-warm"></div><div class="rot-day"></div>
@@ -684,7 +691,7 @@ setTimeout(d,7600);})();</script>
     </div>
     <div class="rotcap">ONE DAY, COMPRESSED</div>
 
-    <p class="lead"><span style="display:block">Cross six time zones in six hours and local time changes immediately.</span><span style="display:block">Your body clock can take six days to catch up.</span></p>
+    <p class="lead"><span class="ld-a">Cross six time zones in six hours and local time changes immediately.</span><span class="ld-b"> Your body clock can take six days to catch up.</span></p>
 
     <p>Crossing multiple time zones disrupts the body&#39;s circadian rhythm. The resulting jet lag can affect sleep, concentration, digestion and recovery. For frequent business travellers, the effects can be compounded by repeated journeys before the body has fully adjusted to the previous time zone.</p>
 
@@ -896,12 +903,12 @@ setTimeout(d,7600);})();</script>
   if(!('IntersectionObserver' in window)){ rows.forEach(function(r){r.classList.add('on')}); return; }
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('on'); });
-  }, {threshold:0, rootMargin:'0px 0px -22% 0px'});
+  }, {threshold:0, rootMargin:'0px 0px -'+(window.innerWidth<=820?42:22)+'% 0px'});
   rows.forEach(function(r){ io.observe(r); });
   var shots = document.querySelectorAll('.tl-img img, .tl-c');
   var io2 = new IntersectionObserver(function(es){
     es.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('on'); });
-  }, {threshold:0.35, rootMargin:'0px 0px -12% 0px'});
+  }, {threshold:0.35, rootMargin:'0px 0px -'+(window.innerWidth<=820?30:12)+'% 0px'});
   shots.forEach(function(x){ io2.observe(x); });
 })();
 </script>
