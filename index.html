@@ -328,7 +328,7 @@ h3{max-width:none}
 
 .intro{position:fixed;inset:0;z-index:9999;overflow:hidden;background:#04060e;animation:lift 7.6s cubic-bezier(.4,0,.5,1) forwards}
 .i-sky{position:absolute;inset:0;background:linear-gradient(178deg in oklab,#2a1e1a 0%,#3a2a21 40%,#46362b 70%,#3a3846 90%,#2e4170 100%)}
-.i-warm{position:absolute;left:0;right:0;top:0;height:205%;opacity:0;will-change:transform,opacity;background:linear-gradient(178deg in oklab,#4a3a33 0%,#63483a 16%,#6e5443 30%,#584a4c 46%,#3e4058 62%,#2f3a5c 80%,#2e4170 100%);animation:irise 4.5s cubic-bezier(.38,0,.24,1) forwards, ifade 4.5s ease-out forwards}
+.i-warm{position:absolute;left:0;right:0;top:0;height:205%;opacity:0;will-change:transform,opacity;background:linear-gradient(178deg in oklab,#4a3a33 0%,#63483a 12%,#6e5443 24%,#584a4c 36%,#3e4058 45%,#2e4170 50%,#2a3c68 57%,#243354 67%,#1e273f 78%,#141b2a 89%,#0d0f12 100%);animation:irise 4.5s cubic-bezier(.38,0,.24,1) forwards, ifade 4.5s ease-out forwards}
 .i-day{position:absolute;inset:0;opacity:0;background:linear-gradient(178deg in oklab,#6d8ca8 0%,#9db6c8 34%,#c3d2dc 64%,#dde8ee 86%,#eff5f8 100%);animation:iday 2.6s ease-in-out forwards}
 .i-grain{position:absolute;top:-40%;left:-40%;width:180%;height:180%;pointer-events:none;opacity:.05;z-index:2;animation:drift 13s ease-in-out infinite;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n9'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n9)'/%3E%3C/svg%3E")}
 .i-haze{position:absolute;top:-30%;left:-30%;width:160%;height:160%;pointer-events:none;opacity:.14;z-index:2;mix-blend-mode:soft-light;
@@ -338,7 +338,7 @@ h3{max-width:none}
 .i-mark .wm{font-size:46px}
 .skip{position:absolute;bottom:28px;right:34px;z-index:6;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.18em;color:rgba(255,255,255,.4);cursor:pointer;background:none;border:0;padding:10px}
 @keyframes irise{0%{transform:translateY(0)}100%{transform:translateY(-51.22%)}}
-@keyframes ifade{0%{opacity:0}16%{opacity:.2}44%{opacity:.75}68%{opacity:1}86%{opacity:1}100%{opacity:.55}}
+@keyframes ifade{0%{opacity:0}16%{opacity:.2}44%{opacity:.75}68%{opacity:1}100%{opacity:1}}
 @keyframes iday{0%,26%{opacity:0}35%{opacity:1}41%{opacity:1}50%{opacity:0}100%{opacity:0}}
 @keyframes imark{0%{opacity:1}90%{opacity:1}100%{opacity:0}}
 @keyframes lift{0%,84%{opacity:1}100%{opacity:0}}
@@ -589,7 +589,7 @@ body{overscroll-behavior-y:none}
 .stg-n{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:#dfb18c}
 .stg-2{margin-top:96px}
 .recv{margin-top:8px;border-left:2px solid #dfb18c;padding:6px 0 6px 24px;max-width:66ch}
-.recv-h{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#a8b0ba;margin-bottom:14px}
+.recv-h{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#a8b0ba;margin-bottom:14px;text-transform:uppercase}
 .recv p{margin:0}
 @media(max-width:820px){.stg-h{font-size:17px;margin-top:38px;margin-bottom:22px}.stg-2{margin-top:64px}.recv{padding-left:18px;max-width:none}}
 
@@ -737,8 +737,10 @@ html.intro-s .i-day{animation-duration:1.7s}
 .i-mark{padding-right:12px}
 @media(max-width:820px){
  .m-br{display:block;height:0}
- .cc-v img{aspect-ratio:16/10;height:auto;flex:0 0 auto;object-fit:cover}
- .turn{max-width:22ch}
+ .cc-v img{aspect-ratio:auto;height:auto;width:100%;max-width:250px;flex:0 0 auto;object-fit:cover}
+ .cc-v{align-items:flex-start}
+ .turn{max-width:none}
+ .turn-g{max-width:22ch}
  .ed img,.edc img{aspect-ratio:16/10;height:auto;object-fit:cover}
  .tl-c .c-d{display:none}
  .tl-c .c-m{display:block}
@@ -760,6 +762,10 @@ html.intro-s .i-day{animation-duration:1.7s}
  transform:rotate(45deg);margin-top:3px}
 @media(max-width:820px){.srail{right:13px;top:30vh;bottom:30vh}.srail-t{bottom:-58px}}
 @media(prefers-reduced-motion:reduce){.srail,.srail-f,.srail-t{transition:none}}
+
+.turn .m-only{display:none}
+.turn .d-only{display:block}
+@media(max-width:820px){.turn .d-only{display:none}.turn .m-only{display:block}}
 </style>
 </head>
 <body id="top">
@@ -789,7 +795,7 @@ if(m)document.documentElement.classList.add('intro-s');
 if(s||r){e.parentNode.removeChild(e);return;}
 try{sessionStorage.setItem('alt15-intro','1');}catch(x){}
 document.documentElement.style.overflow='hidden';
-var d=function(){if(e.parentNode)e.parentNode.removeChild(e);document.documentElement.style.overflow='';};
+var d=function(){document.documentElement.style.overflow='';e.style.transition='opacity .45s ease';e.style.opacity='0';setTimeout(function(){if(e.parentNode)e.parentNode.removeChild(e);},470);};
 var k=document.getElementById('skip');if(k)k.addEventListener('click',d);
 setTimeout(d, m?2800:4500);})();</script>
 
@@ -870,7 +876,7 @@ setTimeout(d, m?2800:4500);})();</script>
 
     <figure class="edc edc-g"><img loading="lazy" decoding="async" src="img/arrival-reception.jpg" alt="An international traveller arriving at the hotel" width="1600" height="759"></figure>
 
-    <p class="turn" style="margin-top:54px">Guests don&rsquo;t experience a spa, a gym and a restaurant. They experience one hotel, and how they feel throughout their stay.</p>
+    <p class="turn turn-g" style="margin-top:54px">Guests don&rsquo;t experience a spa, a gym and a restaurant. They experience one hotel, and how they feel throughout their stay.</p>
   </div>
 </section>
 
@@ -902,7 +908,7 @@ setTimeout(d, m?2800:4500);})();</script>
 <section>
   <div class="page">
     <h2>The elements of Travel Performance</h2>
-    <h3><span style="display:block">Nine areas shape how<span class="m-br"> </span>a guest performs.</span><span style="display:block;color:#a8b0ba">The hotel impacts more of them than it realises.</span></h3>
+    <h3><span style="display:block">Nine areas shape how<span class="m-br"> </span>a guest performs.</span><span style="display:block;color:#a8b0ba">The hotel impacts<span class="m-br"> </span>more of them than it realises.</span></h3>
 
     <p>Travel changes sleep, energy, routine and recovery, while the reason for the journey stays fixed. These are the nine areas ALT&#8209;15° considers across a property: what already exists, how it works together, and what may be missing.</p>
 
@@ -957,7 +963,7 @@ setTimeout(d, m?2800:4500);})();</script>
 
     <p><strong>The risk is not that a spa, gym or recovery suite is under-explained. It is that another property turns similar capabilities into a clearer reason to choose them.</strong></p>
 
-    <p class="turn" style="margin-top:44px"><span style="display:block">The schedule and the traveller</span><span style="display:block">do not arrive in the same state.</span></p>
+    <p class="turn turn-sch" style="margin-top:44px"><span class="d-only">The schedule and the traveller</span><span class="d-only">do not arrive in the same state.</span><span class="m-only">The schedule and the traveller do not arrive in the same state.</span></p>
 
     <div class="cta-row cta-mid">
       <button class="btn btn-p" data-tf-popup="CTrLzThL" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=ALT-15" data-tf-transitive-search-params data-tf-medium="snippet">Book a call &rarr;</button>
