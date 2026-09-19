@@ -61,7 +61,7 @@ h1 span{color:#a8b0ba}
 
 /* ---------- sections ---------- */
 section{padding:84px 0}
-h2{font-size:10.5px;font-family:'IBM Plex Mono',monospace;letter-spacing:.2em;color:#7d858f;
+h2{font-size:10.5px;font-family:'IBM Plex Mono',monospace;letter-spacing:.2em;color:#c3cad2;
  font-weight:400;text-transform:uppercase;margin-bottom:34px}
 h3{font-size:26px;font-weight:400;letter-spacing:-.015em;line-height:1.3;margin-bottom:20px;max-width:22ch}
 p{max-width:62ch;margin-bottom:18px;color:#c3cad2}
@@ -327,20 +327,20 @@ h3{max-width:none}
 .route .btn{padding:13px 22px;font-size:13px}
 
 .intro{position:fixed;inset:0;z-index:9999;overflow:hidden;background:#04060e;animation:lift 7.6s cubic-bezier(.4,0,.5,1) forwards}
-.i-sky{position:absolute;inset:0;background:linear-gradient(178deg in oklab,#04060e 0%,#080e1a 46%,#101a2f 74%,#1e2e4e 92%,#33477a 100%)}
-.i-warm{position:absolute;left:0;right:0;top:0;height:205%;opacity:0;will-change:transform,opacity;background:linear-gradient(178deg in oklab,#1b2c4c 0%,#33486f 30%,#586380 54%,#8a7b85 74%,#b9947f 89%,#dfb18c 100%);animation:irise 7.6s cubic-bezier(.38,0,.24,1) forwards, ifade 7.6s ease-out forwards}
-.i-day{position:absolute;inset:0;opacity:0;background:linear-gradient(178deg in oklab,#6d8ca8 0%,#9db6c8 34%,#c3d2dc 64%,#dde8ee 86%,#eff5f8 100%);animation:iday 4.6s ease-in-out forwards}
+.i-sky{position:absolute;inset:0;background:linear-gradient(178deg in oklab,#2a1e1a 0%,#3a2a21 40%,#46362b 70%,#3a3846 90%,#2e4170 100%)}
+.i-warm{position:absolute;left:0;right:0;top:0;height:205%;opacity:0;will-change:transform,opacity;background:linear-gradient(178deg in oklab,#4a3a33 0%,#63483a 16%,#6e5443 30%,#584a4c 46%,#3e4058 62%,#2f3a5c 80%,#2e4170 100%);animation:irise 4.5s cubic-bezier(.38,0,.24,1) forwards, ifade 4.5s ease-out forwards}
+.i-day{position:absolute;inset:0;opacity:0;background:linear-gradient(178deg in oklab,#6d8ca8 0%,#9db6c8 34%,#c3d2dc 64%,#dde8ee 86%,#eff5f8 100%);animation:iday 2.6s ease-in-out forwards}
 .i-grain{position:absolute;top:-40%;left:-40%;width:180%;height:180%;pointer-events:none;opacity:.05;z-index:2;animation:drift 13s ease-in-out infinite;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n9'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n9)'/%3E%3C/svg%3E")}
 .i-haze{position:absolute;top:-30%;left:-30%;width:160%;height:160%;pointer-events:none;opacity:.14;z-index:2;mix-blend-mode:soft-light;
  background:radial-gradient(46% 34% at 32% 58%,rgba(255,255,255,.85) 0%,rgba(255,255,255,0) 62%),radial-gradient(38% 28% at 72% 40%,rgba(255,255,255,.55) 0%,rgba(255,255,255,0) 66%);
  animation:haze 9s ease-in-out infinite}
-.i-mark{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:3;opacity:0;animation:imark 7.6s ease forwards}
+.i-mark{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:3;opacity:0;animation:imark 4.5s ease forwards}
 .i-mark .wm{font-size:46px}
 .skip{position:absolute;bottom:28px;right:34px;z-index:6;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.18em;color:rgba(255,255,255,.4);cursor:pointer;background:none;border:0;padding:10px}
 @keyframes irise{0%{transform:translateY(0)}100%{transform:translateY(-51.22%)}}
 @keyframes ifade{0%{opacity:0}16%{opacity:.2}44%{opacity:.75}68%{opacity:1}86%{opacity:1}100%{opacity:.55}}
 @keyframes iday{0%,26%{opacity:0}35%{opacity:1}41%{opacity:1}50%{opacity:0}100%{opacity:0}}
-@keyframes imark{0%,56%{opacity:0}66%{opacity:1}84%{opacity:1}92%{opacity:0}100%{opacity:0}}
+@keyframes imark{0%{opacity:1}90%{opacity:1}100%{opacity:0}}
 @keyframes lift{0%,84%{opacity:1}100%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.intro{display:none}.tl-r{opacity:1;transform:none}.tl-img img,.tl-c{opacity:1;transform:none}.j-line,.tick-a,.tick-b,.j-grid:before,.tl:before{animation:none}}
 
@@ -428,7 +428,7 @@ h3{max-width:none}
   .outcome{font-size:20px}
   h1{font-size:25.5px}
   .hero{padding-bottom:62px}
-  h2{font-size:11.5px;font-weight:500;color:#a8b0ba;letter-spacing:.17em}
+  h2{font-size:11.5px;font-weight:400;color:#c3cad2;letter-spacing:.17em}
   .credit{font-size:13.5px;color:#a8b0ba;line-height:1.65}
   .tps-n{font-size:11px;letter-spacing:.16em;color:#a8b0ba}
   .tps-h{font-size:12px;letter-spacing:.14em}
@@ -623,7 +623,7 @@ body{overscroll-behavior-y:none}
  color:#c9d4de;text-decoration:none;white-space:nowrap;transition:color .25s ease}
 .hdr-nav a:hover{color:#ffffff}
 .hdr-m{display:none}
-html{scroll-padding-top:132px}
+html{scroll-padding-top:196px}
 @media(max-width:1020px){
  .hdr-m{display:flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;margin-left:auto;margin-right:12px;
   background:none;border:0;cursor:pointer;padding:0}
@@ -636,7 +636,7 @@ html{scroll-padding-top:132px}
  .hdr-nav.open{max-height:260px}
  .hdr-nav a{display:block;width:100%;padding:17px 0;font-size:11px;border-bottom:1px solid #1b2028}
  .hdr-nav a:last-child{border-bottom:0}
- html{scroll-padding-top:120px}
+ html{scroll-padding-top:166px}
 }
 
 .stg-t{display:flex;flex-direction:column;gap:6px}
@@ -686,6 +686,48 @@ html{scroll-padding-top:132px}
 .tl-r{padding-bottom:78px}
 .tl-r:last-child{padding-bottom:0}
 @media(max-width:820px){.tl-r{padding-bottom:56px}}
+
+.def>p{margin:0}
+.def>p.def-2{margin-top:18px}
+
+.cq-q{color:#a8b0ba;max-width:62ch;margin-top:26px}
+@media(max-width:820px){.cq-q{max-width:none}}
+
+.i-mean{color:#ffffff;margin-top:44px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:11px;
+ letter-spacing:.14em;text-transform:uppercase;color:#e7ebf0;line-height:2.1;
+ opacity:1;animation:iMean 4.5s ease forwards}
+.i-mean span{display:block}
+@keyframes iMean{0%{opacity:1}90%{opacity:1}100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.i-mean{animation:none;opacity:.9}}
+
+.i-mean .i-lead{color:#ffffff;margin-bottom:14px}
+
+html.intro-s .i-warm{animation-duration:2.8s}
+html.intro-s .i-mark,html.intro-s .i-mean{animation-duration:2.8s}
+html.intro-s .i-day{animation-duration:1.7s}
+@media(max-width:820px){
+ .i-mean{font-size:9.5px;letter-spacing:.11em;line-height:1.95;margin-top:30px;padding:0 22px}
+ .i-mean .i-lead{margin-bottom:11px}
+}
+
+@media(max-width:820px){.i-mean .i-br{display:block;height:0}}
+
+.i-mark .lockup{position:relative;left:-4px}
+@media(max-width:820px){.i-mark .lockup{left:-3px}}
+
+.hero h1{margin-bottom:34px}
+.hero p{margin-bottom:0}
+.hero p + p{margin-top:32px}
+.hero .cta-row{margin-top:46px}
+.hero .cta-note{margin-top:26px}
+@media(max-width:820px){
+ .hero h1{margin-bottom:26px}
+ .hero p + p{margin-top:24px}
+ .hero .cta-row{margin-top:34px}
+ .hero .cta-note{margin-top:20px}
+}
+
+@media(max-width:820px){.hero .h-br{display:block;height:0}}
 </style>
 </head>
 <body id="top">
@@ -703,18 +745,21 @@ html{scroll-padding-top:132px}
   <div class="i-sky"></div><div class="i-warm"></div><div class="i-grain"></div>
   <div class="i-mark">
     <div class="lockup"><div class="wm">ALT&#8209;15<span class="deg"></span></div><div class="strap"><span>L</span><span>I</span><span>V</span><span>E</span><span>&nbsp;</span><span>L</span><span>I</span><span>F</span><span>E</span><span>&nbsp;</span><span>A</span><span>T</span><span>&nbsp;</span><span>A</span><span>L</span><span>T</span><span>I</span><span>T</span><span>U</span><span>D</span><span>E</span></div></div>
+    <div class="i-mean"><span class="i-lead">The two coordinates of a global lifestyle.</span><span>ALT is the altitude you operate at.</span><span>15° is the longitude<span class="i-br"> </span>in every time zone you cross.</span></div>
   </div>
   <button class="skip" id="skip" aria-label="Skip intro">SKIP</button>
 </div>
 <script>(function(){var e=document.getElementById('intro');if(!e)return;
 var s;try{s=sessionStorage.getItem('alt15-intro');}catch(x){s='1';}
-var r=window.matchMedia&&(window.matchMedia('(prefers-reduced-motion: reduce)').matches||window.matchMedia('(max-width: 900px)').matches||window.matchMedia('(pointer: coarse)').matches);
+var m=window.matchMedia&&(window.matchMedia('(max-width: 900px)').matches||window.matchMedia('(pointer: coarse)').matches);
+var r=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(m)document.documentElement.classList.add('intro-s');
 if(s||r){e.parentNode.removeChild(e);return;}
 try{sessionStorage.setItem('alt15-intro','1');}catch(x){}
 document.documentElement.style.overflow='hidden';
 var d=function(){if(e.parentNode)e.parentNode.removeChild(e);document.documentElement.style.overflow='';};
 var k=document.getElementById('skip');if(k)k.addEventListener('click',d);
-setTimeout(d,7600);})();</script>
+setTimeout(d, m?2800:4500);})();</script>
 
 <div class="hero">
   <div class="page">
@@ -727,11 +772,11 @@ setTimeout(d,7600);})();</script>
 
     <p class="sub">Your guest has flown in to lead the meeting, close the deal or take the stage. How they feel in between decides the outcome of their stay.</p>
 
-    <p class="sub sub-b"><strong>Your hotel may already have the wellness capability, but not the reason for the guest to use it.</strong></p>
+    <p class="sub sub-b"><strong>Your hotel may already have the wellness capability, but not the<span class="h-br"> </span>reason for the guest to use it.</strong></p>
 
-    <p class="bridge">ALT&#8209;15° makes your hotel the one they choose, and return to.</p>
+    <p class="bridge">ALT&#8209;15° makes your hotel<span class="h-br"> </span>the one they choose, and return to.</p>
 
-    <p class="outcome">Turn your wellness capability into a reason to book.</p>
+    <p class="outcome">Turn your wellness capability<span class="h-br"> </span>into a reason to book.</p>
 
     <div class="cta-row">
       <button class="btn btn-p" data-tf-popup="CTrLzThL" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Travel Performance" data-tf-transitive-search-params data-tf-medium="snippet" data-tf-hidden="route=hospitality">Book a call &rarr;</button>
@@ -757,8 +802,8 @@ setTimeout(d,7600);})();</script>
 <section>
   <div class="page">
     <h2 id="what">What is Travel Performance?</h2>
-    <p class="def">Travel Performance is health and wellness designed around the international traveller: how their journey, their state of mind and body on arrival and throughout their stay, and the purpose of their trip are considered together as one experience, not fragmented amenities.</p>
-    <p class="def def-2">It extends health and wellness across the wider guest experience, considering how it should work through the traveller&rsquo;s journey, from before arrival through the stay and departure.</p>
+    <div class="def"><p>Travel Performance is health and wellness designed around the international traveller: how their journey, their state of mind and body on arrival and throughout their stay, and the purpose of their trip are considered together as one experience, not fragmented amenities.</p>
+      <p class="def-2">It extends health and wellness across the wider guest experience, considering how it should work through the traveller&rsquo;s journey, from before arrival through the stay and departure.</p></div>
   </div>
 </section>
 
@@ -778,7 +823,7 @@ setTimeout(d,7600);})();</script>
     <div class="moments">
       <div class="mo" style="background:linear-gradient(172deg in oklab,#1b2c4c 0%,#33486f 30%,#586380 54%,#8a7b85 74%,#b9947f 89%,#dfb18c 100%);color:#ffffff">
         <span class="mo-t">BEFORE ARRIVAL &amp; ARRIVAL</span>
-        <div><div class="mo-n">The journey and first hours</div><div class="mo-p">How the hotel can support the traveller before they arrive, prepare for what their journey will change, and shape the first hours after they reach the property.</div></div>
+        <div><div class="mo-n">The journey and first hours</div><div class="mo-p">How the hotel can support the traveller before they arrive, anticipate how the journey may affect them, and shape the first hours after they reach the property.</div></div>
       </div>
       <div class="mo" style="background:linear-gradient(172deg in oklab,#6d8ca8 0%,#a8c0cf 40%,#d5e0e8 76%,#eff5f8 100%);color:#1b2733">
         <span class="mo-t" style="color:#ffffff;opacity:1">THE STAY</span>
@@ -849,7 +894,9 @@ setTimeout(d,7600);})();</script>
 
     <p class="cq-lead">You have an international guest whose state has been changed by travel. Your hotel already invests across health and wellness, but is that investment being turned into a differentiated experience built around the traveller and their journey, and a reason to choose your property?</p>
 
-    <p>If every luxury hotel can buy cryotherapy, red light, recovery equipment, diagnostics, longevity programmes and beautiful spa facilities, owning the equipment becomes less distinctive. The question becomes: who is it for, what problem does it solve, how does the whole hotel experience connect around the traveller, and why should they choose you?</p>
+    <p>If every luxury hotel can buy cryotherapy, red light, recovery equipment, diagnostics, longevity programmes and beautiful spa facilities, owning the equipment becomes less distinctive.</p>
+
+    <p class="cq-q">The question becomes: who is it for, what problem does it solve, how does the whole hotel experience connect around the traveller, and why should they choose you?</p>
 
     
 
@@ -877,7 +924,7 @@ setTimeout(d,7600);})();</script>
 
     <p><strong>The risk is not that a spa, gym or recovery suite is under-explained. It is that another property turns similar capabilities into a clearer reason to choose them.</strong></p>
 
-    <p class="turn" style="margin-top:44px">The schedule and the traveller do not arrive in the same state.</p>
+    <p class="turn" style="margin-top:44px"><span style="display:block">The schedule and the traveller</span><span style="display:block">do not arrive in the same state.</span></p>
 
     <div class="cta-row cta-mid">
       <button class="btn btn-p" data-tf-popup="CTrLzThL" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=ALT-15" data-tf-transitive-search-params data-tf-medium="snippet">Book a call &rarr;</button>
@@ -985,7 +1032,7 @@ setTimeout(d,7600);})();</script>
 
     <p><strong>I saw the problem from the traveller&rsquo;s perspective before I ever approached it through wellness.</strong></p>
 
-    <p>I&nbsp;left finance after helping launch four hedge fund start-ups and took a sabbatical in Australia. Bondi at 5am, full of people training before work, showed me how differently health could sit inside a working life. I&nbsp;came back to London in 2008, trained as a personal trainer and launched Libert&eacute; Fitness, teaching outdoor fitness in the parks with a team of trainers and running beach wellness retreats. I&nbsp;sold the business, and moved into luxury wellness travel, performance, supplements and travel health.</p>
+    <p>I&nbsp;left finance after helping launch four hedge fund start-ups and took a sabbatical in Australia. Bondi at 5am, full of people training before work, showed me how differently health could sit inside a working life. I&nbsp;came back to London in 2008, trained as a personal trainer and launched Libert&eacute; Fitness, teaching outdoor fitness in parks with a team of trainers and running beach wellness retreats, featured by Newby Hands in Harper&rsquo;s Bazaar. I&nbsp;sold the business, and moved into luxury wellness travel, performance, supplements and travel health.</p>
         <p>One career inside the world of the international business traveller, another working on the other side of the same problem.</p>
         <p class="intersect">ALT&#8209;15° was built at the intersection of the two.</p>
 
@@ -1007,7 +1054,7 @@ setTimeout(d,7600);})();</script>
         <div class="tl-h">Building for the international traveller</div>
         <div class="tl-b">The airport concierge concept needed wearables, personalisation and AI that were not yet in place. So I&nbsp;built what could help the traveller now.</div>
         <div class="tl-b">I developed JetFuel, a Travel Performance supplement range, with the late Dr Ian Perry, an Aviation Medicine Scientist and medical consultant of more than forty years who held the rare title of Academician of the International Academy of Aviation and Space Medicine, of which there are only two hundred in the world.</div>
-        <div class="tl-b">I created the formulations with UK manufacturers and launched the range in luxury retail including NET-A-PORTER, MR PORTER and Selfridges, securing every listing directly, without distributors.</div>
+        <div class="tl-b">I created the formulations with UK manufacturers and launched the range in luxury retail including Selfridges, MR PORTER and NET-A-PORTER, securing every listing directly, without distributors. There I&nbsp;met with Global Beauty Director Newby Hands to discuss the next products in the range, eight years after she had featured my earlier wellness retreats in Harper&rsquo;s Bazaar.</div>
         <div class="tl-b">JetFuel was also bought by five-star hotels and luxury travel and concierge companies for their guests, in hotel suites, VIP guest experiences, airport lounges and private jets.</div>
         <div class="tl-b">Selling into that world meant being in it. I&nbsp;spent those years inside London&rsquo;s five-star hotels, in conversation with general managers at Corinthia, Maybourne and Shangri-La, and appeared briefly in the BBC&rsquo;s A Hotel for the Super Rich &amp; Famous, filmed at Corinthia.</div>
         <div class="tl-b">I raised $650,000, including one of the first R&amp;D loans issued by Virgin StartUp.</div>
@@ -1069,7 +1116,7 @@ setTimeout(d,7600);})();</script>
         </div>
       </div>
       <div>
-        <p class="ft-note"><strong>The two coordinates of a global lifestyle.</strong>ALT is the altitude you operate at.<span class="ft-2"> 15 is the degrees of longitude in every time zone you cross.</span></p>
+        <p class="ft-note"><strong>The two coordinates of a global lifestyle.</strong>ALT is the altitude you operate at.<span class="ft-2"> 15° is the longitude in every time zone you cross.</span></p>
         <div class="ft-c">
           <div class="ft-cl">GET IN TOUCH</div>
           <a href="mailto:papillon@papillonluck.com">papillon@papillonluck.com</a>
