@@ -220,9 +220,14 @@ h3{max-width:none}
 .strap{display:flex;justify-content:space-between;width:100%;margin-top:14px;font-size:9.5px;color:#c9d4de;font-weight:400}
 
 .j{margin-top:88px;position:relative}
-.j-line{position:absolute;left:0;right:0;top:78px;height:2px;border-radius:1px;opacity:.85;
- background:linear-gradient(90deg in oklab,#04060e 0%,#1b2c4c 6%,#8a7b85 12%,#dfb18c 18%,#c3d2dc 26%,#eff5f8 32%,#c3d2dc 38%,#8a7b85 44%,#1b2c4c 50%,#04060e 56%,#1b2c4c 62%,#8a7b85 68%,#dfb18c 74%,#c3d2dc 82%,#eff5f8 88%,#c3d2dc 94%,#8a7b85 100%);
- background-size:200% 100%;animation:jday 34s linear infinite}
+.j-line{position:absolute;left:0;right:0;top:78px;height:2px;border-radius:1px;opacity:1;background:#1a1f27;overflow:hidden}
+.j-line:after{content:"";position:absolute;left:0;top:0;bottom:0;width:0;border-radius:1px;
+ background:linear-gradient(90deg in oklab,#8a7b85 0%,#dfb18c 9%,#c3d2dc 22%,#eff5f8 32%,#c3d2dc 44%,#8a7b85 56%,#4a5568 68%,#8a7b85 80%,#dfb18c 90%,#c3d2dc 100%);
+ width:100%;background-size:200% 100%;animation:jdrift 120s linear infinite}
+.j-line.on:after{width:100%}
+@keyframes jdrift{0%{background-position:0% 0}100%{background-position:-200% 0}}
+@media(prefers-reduced-motion:reduce){.j-line.on:after{animation:none}}
+.j-line.on:after{width:100%}
 @keyframes jday{0%{background-position:0% 0}100%{background-position:-200% 0}}
 @keyframes jdayv{0%{background-position:0 0%}100%{background-position:0 -200%}}
 .j-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
@@ -271,9 +276,10 @@ h3{max-width:none}
 .turn{font-size:21px;font-weight:300;color:#eef2f6;line-height:1.42;letter-spacing:-.01em;max-width:36ch;margin-bottom:30px}
 
 .tl{margin:44px 0 40px;position:relative;padding-left:38px}
-.tl:before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;
- background:linear-gradient(180deg in oklab,#04060e 0%,#1b2c4c 6%,#8a7b85 12%,#dfb18c 18%,#c3d2dc 26%,#eff5f8 32%,#c3d2dc 38%,#8a7b85 44%,#1b2c4c 50%,#04060e 56%,#1b2c4c 62%,#8a7b85 68%,#dfb18c 74%,#c3d2dc 82%,#eff5f8 88%,#c3d2dc 94%,#8a7b85 100%);
- background-size:100% 200%;animation:jdayv 34s linear infinite}
+.tl:before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:#1a1f27}
+.tl:after{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;
+ background:linear-gradient(180deg in oklab,#8a7b85 0%,#dfb18c 9%,#c3d2dc 22%,#eff5f8 32%,#c3d2dc 44%,#8a7b85 56%,#4a5568 68%,#8a7b85 80%,#dfb18c 90%,#c3d2dc 100%);background-size:100% 100%;
+ clip-path:inset(0 0 calc(100% - var(--tlp,0%)) 0);transition:clip-path .12s linear}
 .tl-r{position:relative;padding:0 0 38px 0;max-width:62ch;opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
 .tl-r.on{opacity:1;transform:none}
 .tl-r:last-child{padding-bottom:0}
@@ -741,6 +747,8 @@ html.intro-s .i-day{animation-duration:1.7s}
  .cc-v img{aspect-ratio:3/4;height:auto;width:100%;max-width:none;flex:0 0 auto;object-fit:cover;object-position:50% 18%}
  .cc-v{align-items:stretch}
  .cc{gap:14px}
+ .cc-v img{margin-bottom:24px}
+ .cc{gap:84px}
  .turn{max-width:none}
  .turn-g{max-width:22ch}
  .ed img,.edc img{aspect-ratio:16/10;height:auto;object-fit:cover}
@@ -1339,6 +1347,26 @@ setTimeout(d, m?2800:4500);})();</script>
  };
  t.addEventListener('click',function(){ scrollTo({top:0,behavior:'smooth'}); });
  addEventListener('scroll',tick,{passive:true}); addEventListener('resize',tick); tick();
+})();</script>
+
+<script>(function(){
+ var tl=document.querySelector('.tl'); if(!tl) return;
+ var tick=function(){
+   var r=tl.getBoundingClientRect();
+   var p=(innerHeight*0.62 - r.top)/r.height;
+   p=Math.max(0,Math.min(1,p));
+   tl.style.setProperty('--tlp',(p*100)+'%');
+ };
+ addEventListener('scroll',tick,{passive:true}); addEventListener('resize',tick); tick();
+})();</script>
+
+<script>(function(){
+ var l=document.querySelector('.j-line'); if(!l) return;
+ l.style.setProperty('--jw', l.getBoundingClientRect().width+'px');
+ addEventListener('resize',function(){ l.style.setProperty('--jw', l.getBoundingClientRect().width+'px'); });
+ if(!('IntersectionObserver' in window)){ l.classList.add('on'); return; }
+ var o=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ l.classList.add('on'); o.disconnect(); } }); },{threshold:.2});
+ o.observe(l);
 })();</script>
 </body>
 </html>
