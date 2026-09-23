@@ -142,14 +142,10 @@ h1{letter-spacing:-.02em}
 .s.on .track .ln{width:100%}
 .s:not(.on) .track .ln,.s:not(.on) .cats-line .ln{transition:none}
 .s:not(.on) .areas::before{transition:none}
-.s:not(.on) .nd,.s:not(.on) .cats .cd,.s:not(.on) .areas > .endnode{top:-6px}
-.areas .ad{transition:none}
+.s:not(.on) .nd,.s:not(.on) .cats .cd,.s:not(.on) .areas .ad{transition:none}
 .nodes{display:grid;grid-template-columns:repeat(8,1fr) 2fr;gap:8px;margin-top:-8px}
 .nd{opacity:0;transition:opacity .45s ease}
 .s.on .nd{opacity:1}
-.track .endnode,.cats-line .endnode,.areas > .endnode{position:absolute;right:0;top:-6px;width:14px;height:14px;border-radius:50%;z-index:2;opacity:0;transition:opacity .45s ease;border:2px solid transparent;background:linear-gradient(var(--bg),var(--bg)) padding-box,linear-gradient(90deg in oklab,#8a7b85 0%,#dfb18c 9%,#c3d2dc 22%,#eff5f8 32%,#c3d2dc 44%,#8a7b85 56%,#4a5568 68%,#8a7b85 80%,#dfb18c 90%,#c3d2dc 100%) border-box;background-size:100% 100%,calc(var(--W,1200px)*2) 100%;background-repeat:no-repeat,repeat-x;background-position:0 0,calc(var(--x,0px)*-1) 0;animation:ndrift 120s linear infinite;}
-.s.on .track .endnode,.s.on .cats-line .endnode,.s.on .areas > .endnode{opacity:1}
-.s:not(.on) .track .endnode,.s:not(.on) .cats-line .endnode,.s:not(.on) .areas > .endnode{transition:none}
 .nd .dot{width:14px;height:14px;border-radius:50%;border:2px solid transparent;background:linear-gradient(var(--bg),var(--bg)) padding-box,linear-gradient(90deg in oklab,#8a7b85 0%,#dfb18c 9%,#c3d2dc 22%,#eff5f8 32%,#c3d2dc 44%,#8a7b85 56%,#4a5568 68%,#8a7b85 80%,#dfb18c 90%,#c3d2dc 100%) border-box;background-size:100% 100%,calc(var(--W,1200px)*2) 100%;background-repeat:no-repeat,repeat-x;background-position:0 0,calc(var(--x,0px)*-1) 0;animation:ndrift 120s linear infinite;margin-bottom:18px}
 .nd .n{font-size:10px;color:#8a7b85;margin-bottom:6px}
 .nd .e{font-size:14px;line-height:1.4;color:var(--ink);white-space:nowrap}
@@ -289,7 +285,6 @@ h1{letter-spacing:-.02em}
  /* phone: the website's mobile treatment, a vertical line with nodes down the left */
  .ui.brand{position:absolute}
  .cats-line{display:none}
- .areas > .endnode{display:none!important}
  .cats{grid-template-columns:1fr!important;gap:16px;position:relative;padding-left:30px}
  .cats::before,.nodes::before,.areas::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;height:auto;right:auto;clip-path:none;animation:none;background:linear-gradient(180deg in oklab,#8a7b85 0%,#dfb18c 18%,#c3d2dc 40%,#eff5f8 55%,#c3d2dc 70%,#8a7b85 88%,#4a5568 100%)}
  .cats > div{position:relative}
@@ -331,7 +326,7 @@ h1{letter-spacing:-.02em}
  <div class="pad">
   <div class="tag m"><b>01</b>The shift</div>
   <div class="bigq"><h2 class="h-m"><span class="blk bal">Luxury hotels are investing heavily in wellness.</span> <span class="soft blk bal">But too often, that investment sits across the property rather than working together as one proposition.</span></h2></div>
-  <div class="cats-wrap"><div class="cats-l m">Across the property</div><div class="cats-line"><div class="ln"></div><i class="endnode"></i></div><div class="cats"><div><i class="cd"></i><span class="w">Sleep</span></div><div><i class="cd"></i><span class="w">Nutrition</span></div><div><i class="cd"></i><span class="w">Fitness</span></div><div><i class="cd"></i><span class="w">Recovery</span></div><div><i class="cd"></i><span class="w">Technology</span></div></div></div>
+  <div class="cats-wrap"><div class="cats-l m">Across the property</div><div class="cats-line"><div class="ln"></div></div><div class="cats"><div><i class="cd"></i><span class="w">Sleep</span></div><div><i class="cd"></i><span class="w">Nutrition</span></div><div><i class="cd"></i><span class="w">Fitness</span></div><div><i class="cd"></i><span class="w">Recovery</span></div><div><i class="cd"></i><span class="w">Technology</span></div></div></div>
  </div>
 </section>
 
@@ -391,7 +386,7 @@ h1{letter-spacing:-.02em}
     <div class="ph b"><div class="k m">The stay</div><p>The reason they came: the meetings, the stage, the deal.</p><div class="brk"></div></div>
     <div class="ph c"><div class="k m">Departure &amp; after the stay</div><p>How they leave, and how the experience continues on their onward journey.</p><div class="brk"></div></div>
    </div>
-   <div class="track"><div class="ln"></div><i class="endnode"></i></div>
+   <div class="track"><div class="ln"></div></div>
    <div class="nodes">
     <div class="nd"><div class="dot"></div><div class="n m">01</div><div class="e">Schedule <br>and timing</div></div>
     <div class="nd"><div class="dot"></div><div class="n m">02</div><div class="e">Before arrival <br>and first hours</div></div>
@@ -417,7 +412,7 @@ h1{letter-spacing:-.02em}
    <div><div class="k m">Package</div><h3>New experiences with premium potential</h3><p>Creates Travel Performance experiences around the traveller&rsquo;s journey that the hotel can package and price.</p></div>
    <div><div class="k m">Utilisation</div><h3>More use of the spaces you&rsquo;ve built</h3><p>Connects the proposition to the spa, fitness and recovery facilities across the property, giving guests a reason to use them.</p></div>
    <div><div class="k m">Sales</div><h3>A proposition your teams can sell</h3><p>Gives commercial and events teams a defined proposition to sell to individual travellers and corporate clients.</p></div>
-   <div><div class="k m">Return</div><h3>A reason to choose you again</h3><p>Creates a more relevant experience around why the guest travelled, giving them a reason to choose the property again.</p></div>
+   <div><div class="k m">Loyalty</div><h3>A reason to return and stay loyal</h3><p>Creates a more relevant experience around why the guest travelled, so they keep coming back.</p></div>
   </div>
   <p class="ret-f">One connected proposition, giving wellness a clearer role in how the property is positioned, sold and experienced.</p>
  </div>
@@ -434,7 +429,7 @@ h1{letter-spacing:-.02em}
    <div><span class="n">Ongoing</span><p>A continuing role rather than a one&#8209;off project, refined as your guests, property and market change.</p></div>
    <div><span class="n">Your teams</span><p>ALT&#8209;15° provides the strategic direction, working with your existing teams to bring the proposition to life across the property, with no new department or major build programme.</p></div>
   </div>
-  <div class="areas"><i class="endnode"></i>
+  <div class="areas">
    <div><i class="ad"></i><div class="n m">01</div><h3>Developing the proposition</h3><p>Who it is for, the travel problem it addresses, and the capabilities it brings together.</p></div>
    <div><i class="ad"></i><div class="n m">02</div><h3>Shaping the journey</h3><p>How it comes to life across arrival, stay and departure, and what may be missing.</p></div>
    <div><i class="ad"></i><div class="n m">03</div><h3>Positioning the experience</h3><p>Strategic positioning and commercialisation, giving your teams a clearer story to sell.</p></div>
@@ -465,7 +460,7 @@ h1{letter-spacing:-.02em}
    <div class="k m"><b>08</b>Why ALT&#8209;15°</div>
    <h2 class="h-m">Built from both sides of the problem.</h2>
    <div class="creds">
-    <div><span class="m">Luxury wellness, 18 years</span>One of London&rsquo;s early in&#8209;hotel personal trainers at The Cadogan on Sloane Street, including members of UAE royal families. Then created JetFuel, a luxury travel supplement range bought by five&#8209;star hotels for suites, VIP experiences, lounges and private jets.</div>
+    <div><span class="m">Luxury wellness, 18 years</span>One of London&rsquo;s early in&#8209;hotel personal trainers at The Cadogan, and trainer to private clients including members of UAE royal families. Then created JetFuel, a luxury travel supplement range bought by five&#8209;star hotels for suites, lounges and private jets.</div>
     <div><span class="m">International finance, 14 years</span>Investor relations at Peloton Partners, a London hedge fund start&#8209;up that grew to $2.6 billion AUM, recruited from Goldman Sachs by founder Ron Beller. Ran global multi&#8209;city investor roadshows and helped launch four hedge fund start&#8209;ups.</div>
    </div>
       <p class="fq">&ldquo;I&rsquo;ve been travelling for business over 20 years and this was undoubtedly the best business trip I&rsquo;ve ever experienced; my mental state was off the charts. I felt very positive, strong and balanced throughout the trip. I&rsquo;m actually really looking forward to travelling long&#8209;haul again but only if Papillon looks after me, I can&rsquo;t imagine going back to travelling how I used to.&rdquo;<cite>Global Partner, top-five executive search firm &middot; Five-day trip, London, New York, Chicago</cite></p>
@@ -505,7 +500,7 @@ h1{letter-spacing:-.02em}
   count.innerHTML='<b>'+pad(cur+1)+'</b> of '+pad(n); bar.style.width=((cur+1)/n*100)+'%';
   try{history.replaceState(null,'','#'+(cur+1))}catch(e){} }
  function sync(){ var k=mq.matches?1:Math.min(innerWidth/1600,innerHeight/900);
-  [['.track','.nd'],['.track','.track .endnode'],['.cats-line','.cats-line .endnode'],['.areas','.areas > .endnode'],['.cats-line','.cats .cd'],['.areas','.areas .ad']].forEach(function(p){
+  [['.track','.nd'],['.cats-line','.cats .cd'],['.areas','.areas .ad']].forEach(function(p){
    document.querySelectorAll(p[0]).forEach(function(line){
     var s=line.closest('.s'); var L=line.getBoundingClientRect(); var W=L.width/k;
     s.querySelectorAll(p[1]).forEach(function(d){ var x=(d.getBoundingClientRect().left-L.left)/k;
