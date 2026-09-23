@@ -112,6 +112,38 @@ h1{letter-spacing:-.02em}
 .tk .tick-i span{color:#5c646e;padding-left:8px}
 @media (prefers-reduced-motion:reduce){.tk .tick-a,.tk .tick-b{animation:none}}
 
+
+/* last slide footer: the website's own footer styles */
+.dft{position:absolute;left:120px;bottom:56px;width:760px}
+.dft-row{display:flex;align-items:flex-start;gap:56px;margin-top:40px}
+.ft-links2{display:flex;gap:32px;align-items:baseline}
+.ft-links2 a{font-size:14px;color:#cfd6de;text-decoration:none;border-bottom:1px solid #2b323b;padding-bottom:3px}
+.ft-lk{display:inline-flex;flex-direction:column;align-items:stretch;flex:none}
+.ft-wm{display:flex;align-items:flex-start;position:relative;font-family:var(--sans);font-weight:400;font-size:26px;letter-spacing:.17em;line-height:.95;color:#f0f3f6}
+.ft-wm .deg{width:4px;height:4px;border:1px solid #f0f3f6;border-radius:50%;position:absolute;left:100%;top:-1px;margin-left:2px}
+.ft-strap{display:flex;justify-content:space-between;width:100%;margin-top:8px;font-size:7px;color:#c9d4de;font-weight:400;font-family:var(--sans)}
+.ft-note{font-size:12px;color:#8d9aa6;line-height:1.75;max-width:44ch;margin:0}
+.ft-note strong{color:#a8b0ba;font-weight:400;display:block;margin-bottom:5px}
+.ft-note span{display:block}
+.ft-c{margin:0}
+.ft-cl{font-family:var(--mono);font-size:8.5px;letter-spacing:.15em;color:#7d858f;margin-bottom:12px}
+.ft-c a{display:block;font-size:14px;color:#cfd6de;text-decoration:none;border-bottom:1px solid #2b323b;padding-bottom:3px;width:fit-content}
+.ft-c a + a{margin-top:12px}
+.ft-legal{margin:22px 0 0;font-size:12px;line-height:1.6;letter-spacing:.03em;color:#7d858f}
+
+
+/* booking: consent prompt, then Calendly opens over the deck (same cookie as the website) */
+.bk{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:rgba(7,8,10,.72);padding:24px}
+.bk[hidden]{display:none}
+.bk-p{max-width:440px;background:#12161c;border-radius:3px;padding:28px 30px}
+.bk-l{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#7d858f;margin-bottom:14px}
+.bk-p p{font-size:14px;line-height:1.65;color:#c3cad2;margin:0 0 22px}
+.bk-b{display:flex;gap:10px;justify-content:flex-end}
+.bk-b button{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;border:0;border-radius:3px;padding:13px 20px;cursor:pointer}
+.bk-d{background:transparent;color:#a8b0ba}
+.bk-a{background:#e7ebf0;color:#11151c}
+.bk-b button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
 /* 04 commercial question */
 .v-h{position:absolute;left:120px;top:140px;width:820px}
 .vs{position:absolute;left:120px;right:120px;top:465px;display:grid;grid-template-columns:1fr 90px 1fr;align-items:stretch}
@@ -210,7 +242,7 @@ h1{letter-spacing:-.02em}
 .fq cite{display:block;margin-top:16px;font-style:normal;font-weight:400;font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;color:#7d858f;text-transform:uppercase;line-height:1.7}
 
 /* 10 close */
-.close-t{position:absolute;left:120px;top:200px;width:840px}
+.close-t{position:absolute;left:120px;top:140px;width:840px}
 .close-t .lede{text-wrap:balance}
 .close-t .btn{margin-top:72px}
 .btn{display:inline-block;margin-top:42px;padding:18px 30px;border-radius:3px;background:#e7ebf0;color:#11151c;font-family:var(--sans);font-size:11.5px;font-weight:500;text-transform:uppercase;letter-spacing:.24em;text-decoration:none}
@@ -238,6 +270,9 @@ h1{letter-spacing:-.02em}
  .s1 .shade-l{top:auto;height:120px;bottom:auto;background:linear-gradient(0deg,var(--bg) 0%,rgba(13,15,18,0) 100%);transform:translateY(-120px)}
  .s1 .pad{min-height:0!important;padding-top:8px}
  .c-foot{display:none!important}
+ .dft{margin-top:44px}
+ .ft-links2{flex-wrap:wrap;gap:14px 24px}
+ .dft-row{flex-direction:column;gap:24px;margin-top:32px}
  .c-text{margin-bottom:40px}
  .cats-wrap{margin-top:36px}
  .cats-line .ln{width:100%}
@@ -479,13 +514,33 @@ h1{letter-spacing:-.02em}
   <div class="tag m"><b>09</b>The next step</div>
   <div class="close-t"><h2 class="h-m"><span class="blk">Make your wellness investment</span> <span class="soft blk">a reason to book.</span></h2>
    <p class="lede" style="margin-top:26px">Every property starts from a different place. The first conversation is about your guests, your wellness ambitions and where Travel Performance could create the strongest commercial opportunity.</p>
-   <a class="btn" href="https://calendly.com/papillon_luck/luxury-hospitality-travel-performance-call" target="_blank" rel="noopener">Book a call &rarr;</a></div>
-  <div class="contact"><a href="https://alt15.co" target="_blank" rel="noopener">alt15.co</a><a href="mailto:papillon@papillonluck.com">papillon@papillonluck.com</a><a href="https://www.linkedin.com/in/papillonluck/" target="_blank" rel="noopener">LinkedIn</a></div>
+   <a class="btn" id="book" href="https://calendly.com/papillon_luck/luxury-hospitality-travel-performance-call" target="_blank" rel="noopener">Book a call &rarr;</a></div>
+  <div class="dft">
+   <div class="ft-c">
+    <div class="ft-cl">GET IN TOUCH</div>
+    <div class="ft-links2"><a href="https://alt15.co" target="_blank" rel="noopener">alt15.co</a><a href="mailto:papillon@papillonluck.com">papillon@papillonluck.com</a><a href="https://www.linkedin.com/in/papillonluck/" target="_blank" rel="noopener">LinkedIn</a></div>
+   </div>
+   <div class="dft-row">
+    <div class="ft-lk"><div class="ft-wm">ALT&#8209;15<span class="deg"></span></div><div class="ft-strap"><span>L</span><span>I</span><span>V</span><span>E</span><span>&nbsp;</span><span>L</span><span>I</span><span>F</span><span>E</span><span>&nbsp;</span><span>A</span><span>T</span><span>&nbsp;</span><span>A</span><span>L</span><span>T</span><span>I</span><span>T</span><span>U</span><span>D</span><span>E</span></div></div>
+    <div class="ft-nl">
+    <p class="ft-note"><strong>The two coordinates of a global lifestyle.</strong><span>ALT is the altitude you operate at.</span><span>15° is the longitude in every time zone you cross.</span></p>
+     <p class="ft-legal">&copy; 2026 ALT&#8209;15°. All rights reserved.</p>
+    </div>
+   </div>
+  </div>
  </div>
 </section>
 
 </div></div>
 
+
+<div class="bk" id="bk" role="dialog" aria-modal="true" aria-label="Book a call" hidden>
+ <div class="bk-p">
+  <div class="bk-l">Book a call</div>
+  <p>Allow lets the booking calendar open here, and it may set its own cookies. Decline and it opens in a new tab instead. No analytics, no advertising, no tracking.</p>
+  <div class="bk-b"><button type="button" class="bk-d" data-bk="decline">Decline</button><button type="button" class="bk-a" data-bk="allow">Allow</button></div>
+ </div>
+</div>
 <div class="navb"><button id="prev" aria-label="Previous slide">&larr;</button><button id="next" aria-label="Next slide">&rarr;</button></div>
 
 <script>
@@ -513,11 +568,47 @@ h1{letter-spacing:-.02em}
  document.getElementById('next').onclick=function(){show(cur+1)};
  document.getElementById('prev').onclick=function(){show(cur-1)};
  addEventListener('keydown',function(e){ if(mq.matches) return;
+  var bk=document.getElementById('bk'); if((bk&&!bk.hidden)||document.querySelector('.calendly-overlay')) return;
   if(['ArrowRight','ArrowDown','PageDown',' '].indexOf(e.key)>-1){e.preventDefault();show(cur+1)}
   else if(['ArrowLeft','ArrowUp','PageUp'].indexOf(e.key)>-1){e.preventDefault();show(cur-1)}
   else if(e.key==='Home'){show(0)} else if(e.key==='End'){show(n-1)} });
  var x0=null; addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
  addEventListener('touchend',function(e){ if(mq.matches||x0===null) return; var d=e.changedTouches[0].clientX-x0; if(Math.abs(d)>50) show(cur+(d<0?1:-1)); x0=null; });
+})();
+</script>
+
+<script>
+/* Book a call: uses the website's consent cookie (alt15_cookie_consent). With consent,
+   Calendly opens over the deck; without it, the calendar opens in a new tab. */
+(function(){
+ var URL='https://calendly.com/papillon_luck/luxury-hospitality-travel-performance-call';
+ var btn=document.getElementById('book'), bk=document.getElementById('bk'); if(!btn||!bk) return;
+ var read=function(){var m=document.cookie.match(/(?:^|;\s*)alt15_cookie_consent=([^;]*)/);return m?m[1]:null};
+ var write=function(v){var d=new Date();d.setFullYear(d.getFullYear()+1);document.cookie='alt15_cookie_consent='+v+';expires='+d.toUTCString()+';path=/;SameSite=Lax'};
+ var ready=false, loading=null;
+ var load=function(){ if(loading) return loading;
+  loading=new Promise(function(res,rej){
+   var l=document.createElement('link'); l.rel='stylesheet'; l.href='https://assets.calendly.com/assets/external/widget.css'; document.head.appendChild(l);
+   var s=document.createElement('script'); s.src='https://assets.calendly.com/assets/external/widget.js'; s.async=true;
+   s.onload=function(){ ready=!!window.Calendly; ready?res():rej() }; s.onerror=rej; document.head.appendChild(s);
+   setTimeout(function(){ if(!ready) rej() },6000);
+  }); return loading; };
+ var popup=function(){ load().then(function(){ Calendly.initPopupWidget({url:URL}) }).catch(function(){ location.href=URL }) };
+ if(read()==='allow') load().catch(function(){});
+ btn.addEventListener('click',function(e){
+  var c=read();
+  if(c==='decline') return;            /* let the link open in a new tab */
+  e.preventDefault();
+  if(c==='allow'){ popup(); return }
+  bk.hidden=false; bk.querySelector('.bk-a').focus();
+ });
+ bk.addEventListener('click',function(e){
+  var b=e.target.closest('[data-bk]');
+  if(!b){ if(e.target===bk) bk.hidden=true; return }
+  write(b.dataset.bk); bk.hidden=true;
+  if(b.dataset.bk==='allow') popup(); else window.open(URL,'_blank','noopener');
+ });
+ addEventListener('keydown',function(e){ if(e.key==='Escape') bk.hidden=true });
 })();
 </script>
 </body>
