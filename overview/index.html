@@ -133,6 +133,7 @@ h1{letter-spacing:-.02em}
 
 
 /* booking: consent prompt, then Calendly opens over the deck (same cookie as the website) */
+html.cal-open .ui.count{visibility:hidden}
 .bk{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:rgba(7,8,10,.72);padding:24px}
 .bk[hidden]{display:none}
 .bk-p{max-width:440px;background:#12161c;border-radius:3px;padding:28px 30px}
@@ -609,6 +610,9 @@ h1{letter-spacing:-.02em}
   if(b.dataset.bk==='allow') popup(); else window.open(URL,'_blank','noopener');
  });
  addEventListener('keydown',function(e){ if(e.key==='Escape') bk.hidden=true });
+ /* while Calendly is open, hide the slide counter so its close cross sits alone in the corner */
+ var root=document.documentElement;
+ new MutationObserver(function(){ root.classList.toggle('cal-open',!!document.querySelector('.calendly-overlay')) }).observe(document.body,{childList:true});
 })();
 </script>
 </body>
