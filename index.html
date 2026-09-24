@@ -1249,10 +1249,11 @@ setTimeout(d, m?2800:4500);})();</script>
       else {
         hdr.style.background = '';
         hdr.style.backgroundColor = '#0d0f12';
-        hdr.style.backgroundImage = side + ',' + fall + ',url(img/traveller-cabin.jpg)';
+        var past = 'linear-gradient(#0d0f12,#0d0f12)';
+        hdr.style.backgroundImage = past + ',' + side + ',' + fall + ',url(img/traveller-cabin.jpg)';
         hdr.style.backgroundRepeat = 'no-repeat';
-        hdr.style.backgroundSize = W + 'px ' + H + 'px,' + W + 'px ' + H + 'px,' + bw + 'px ' + bh + 'px';
-        hdr.style.backgroundPosition = '0 0,0 ' + r.top + 'px,' + bx + 'px ' + by + 'px';
+        hdr.style.backgroundSize = W + 'px 4000px,' + W + 'px ' + H + 'px,' + W + 'px ' + H + 'px,' + bw + 'px ' + bh + 'px';
+        hdr.style.backgroundPosition = '0 ' + r.bottom + 'px,0 0,0 ' + r.top + 'px,' + bx + 'px ' + by + 'px';
       }
       hdr.style.setProperty('--hdrc','rgba(11,14,20,0)'); hdr.style.setProperty('--hdrc0','rgba(11,14,20,0)'); return;
     }
