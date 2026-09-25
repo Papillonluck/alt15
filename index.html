@@ -817,6 +817,9 @@ html.intro-s .i-day{animation-duration:1.7s}
 /* The campaign photos share the deck's evening tone; documentary and retail photos stay true to life */
 img[src="img/arrival-reception.jpg"],img[src="img/traveller-lounge.jpg"],img[src="img/arrival-car.jpg"],
 img[src="img/hotel-lounge.jpg"],img[src="img/traveller-cabin.jpg"],img[src="img/hotel-interior.jpg"]{filter:brightness(.8) saturate(.95)}
+.tick-band{padding:84px 0 20px;overflow:hidden}
+.tick-band .hero-tick{margin-top:0;padding-top:0}
+@media (max-width:760px){.tick-band{padding:56px 0 8px}}
 </style>
 </head>
 <body id="top">
@@ -873,16 +876,10 @@ setTimeout(d, m?2800:4500);})();</script>
     <p class="cta-note">Thirty minutes identifying your hotel&rsquo;s Travel Performance opportunity.</p>
     </header>
 
-    <div class="hero-tick"><div class="tick">
-      <div class="tick-r">
-        <div class="tick-k">SCHEDULE</div>
-        <div class="tick-win"><div class="tick-t tick-a"><div class="tick-i">DXB&nbsp;&nbsp;07:45<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;11:10<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;06:55<span>UTC+4</span></div><div class="tick-i">JFK&nbsp;&nbsp;23:40<span>UTC-4</span></div><div class="tick-i">DXB&nbsp;&nbsp;14:20<span>UTC+4</span></div><div class="tick-i">SIN&nbsp;&nbsp;07:30<span>UTC+8</span></div><div class="tick-i">AUH&nbsp;&nbsp;18:10<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;09:05<span>UTC+4</span></div><div class="tick-i">HKG&nbsp;&nbsp;16:25<span>UTC+8</span></div><div class="tick-i">DXB&nbsp;&nbsp;05:50<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;13:35<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;21:15<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;07:45<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;11:10<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;06:55<span>UTC+4</span></div><div class="tick-i">JFK&nbsp;&nbsp;23:40<span>UTC-4</span></div><div class="tick-i">DXB&nbsp;&nbsp;14:20<span>UTC+4</span></div><div class="tick-i">SIN&nbsp;&nbsp;07:30<span>UTC+8</span></div><div class="tick-i">AUH&nbsp;&nbsp;18:10<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;09:05<span>UTC+4</span></div><div class="tick-i">HKG&nbsp;&nbsp;16:25<span>UTC+8</span></div><div class="tick-i">DXB&nbsp;&nbsp;05:50<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;13:35<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;21:15<span>UTC+4</span></div></div></div></div>
-      </div>
-      <div class="tick-r">
-        <div class="tick-k">BODY CLOCK<br><span style="color:#3f4650;letter-spacing:.12em">ILLUSTRATIVE</span></div>
-        <div class="tick-win"><div class="tick-t tick-b"><div class="tick-i">DXB&nbsp;&nbsp;07:45<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;14:10<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;03:55<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;07:40<span>UTC+4</span></div><div class="tick-i">JFK&nbsp;&nbsp;06:20<span>UTC-4</span></div><div class="tick-i">DXB&nbsp;&nbsp;03:30<span>UTC+4</span></div><div class="tick-i">SIN&nbsp;&nbsp;22:10<span>UTC+8</span></div><div class="tick-i">AUH&nbsp;&nbsp;09:05<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;12:25<span>UTC+4</span></div><div class="tick-i">HKG&nbsp;&nbsp;09:50<span>UTC+8</span></div><div class="tick-i">DXB&nbsp;&nbsp;16:35<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;18:15<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;07:45<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;14:10<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;03:55<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;07:40<span>UTC+4</span></div><div class="tick-i">JFK&nbsp;&nbsp;06:20<span>UTC-4</span></div><div class="tick-i">DXB&nbsp;&nbsp;03:30<span>UTC+4</span></div><div class="tick-i">SIN&nbsp;&nbsp;22:10<span>UTC+8</span></div><div class="tick-i">AUH&nbsp;&nbsp;09:05<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;12:25<span>UTC+4</span></div><div class="tick-i">HKG&nbsp;&nbsp;09:50<span>UTC+8</span></div><div class="tick-i">DXB&nbsp;&nbsp;16:35<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;18:15<span>UTC+1</span></div></div></div></div>
-      </div>
+    
     </div></div>
+
+
 
 
 <section>
@@ -927,6 +924,15 @@ setTimeout(d, m?2800:4500);})();</script>
   </div>
 </section>
 
+<div class="tick-band"><div class="page"><div class="hero-tick"><div class="tick">
+      <div class="tick-r">
+        <div class="tick-k">SCHEDULE</div>
+        <div class="tick-win"><div class="tick-t tick-a"><div class="tick-i">DXB&nbsp;&nbsp;07:45<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;11:10<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;06:55<span>UTC+4</span></div><div class="tick-i">JFK&nbsp;&nbsp;23:40<span>UTC-4</span></div><div class="tick-i">DXB&nbsp;&nbsp;14:20<span>UTC+4</span></div><div class="tick-i">SIN&nbsp;&nbsp;07:30<span>UTC+8</span></div><div class="tick-i">AUH&nbsp;&nbsp;18:10<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;09:05<span>UTC+4</span></div><div class="tick-i">HKG&nbsp;&nbsp;16:25<span>UTC+8</span></div><div class="tick-i">DXB&nbsp;&nbsp;05:50<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;13:35<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;21:15<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;07:45<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;11:10<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;06:55<span>UTC+4</span></div><div class="tick-i">JFK&nbsp;&nbsp;23:40<span>UTC-4</span></div><div class="tick-i">DXB&nbsp;&nbsp;14:20<span>UTC+4</span></div><div class="tick-i">SIN&nbsp;&nbsp;07:30<span>UTC+8</span></div><div class="tick-i">AUH&nbsp;&nbsp;18:10<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;09:05<span>UTC+4</span></div><div class="tick-i">HKG&nbsp;&nbsp;16:25<span>UTC+8</span></div><div class="tick-i">DXB&nbsp;&nbsp;05:50<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;13:35<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;21:15<span>UTC+4</span></div></div></div></div>
+      </div>
+      <div class="tick-r">
+        <div class="tick-k">BODY CLOCK<br><span style="color:#3f4650;letter-spacing:.12em">ILLUSTRATIVE</span></div>
+        <div class="tick-win"><div class="tick-t tick-b"><div class="tick-i">DXB&nbsp;&nbsp;07:45<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;14:10<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;03:55<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;07:40<span>UTC+4</span></div><div class="tick-i">JFK&nbsp;&nbsp;06:20<span>UTC-4</span></div><div class="tick-i">DXB&nbsp;&nbsp;03:30<span>UTC+4</span></div><div class="tick-i">SIN&nbsp;&nbsp;22:10<span>UTC+8</span></div><div class="tick-i">AUH&nbsp;&nbsp;09:05<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;12:25<span>UTC+4</span></div><div class="tick-i">HKG&nbsp;&nbsp;09:50<span>UTC+8</span></div><div class="tick-i">DXB&nbsp;&nbsp;16:35<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;18:15<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;07:45<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;14:10<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;03:55<span>UTC+1</span></div><div class="tick-i">DXB&nbsp;&nbsp;07:40<span>UTC+4</span></div><div class="tick-i">JFK&nbsp;&nbsp;06:20<span>UTC-4</span></div><div class="tick-i">DXB&nbsp;&nbsp;03:30<span>UTC+4</span></div><div class="tick-i">SIN&nbsp;&nbsp;22:10<span>UTC+8</span></div><div class="tick-i">AUH&nbsp;&nbsp;09:05<span>UTC+4</span></div><div class="tick-i">DXB&nbsp;&nbsp;12:25<span>UTC+4</span></div><div class="tick-i">HKG&nbsp;&nbsp;09:50<span>UTC+8</span></div><div class="tick-i">DXB&nbsp;&nbsp;16:35<span>UTC+4</span></div><div class="tick-i">LHR&nbsp;&nbsp;18:15<span>UTC+1</span></div></div></div></div>
+      </div></div></div>
 <section style="padding-bottom:52px">
   <div class="page">
     <h2>The traveller</h2>
