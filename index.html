@@ -838,6 +838,12 @@ img[src="img/hotel-lounge.jpg"],img[src="img/traveller-cabin.jpg"],img[src="img/
 .cq-list{list-style:none;counter-reset:cq;margin:26px 0 34px;padding:0;max-width:62ch}.cq-list li{counter-increment:cq;display:flex;gap:16px;padding:14px 0;border-top:1px solid rgba(255,255,255,.08);color:#eef2f6;line-height:1.5}.cq-list li::before{content:counter(cq);font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12px;color:#dfb18c;padding-top:4px;min-width:14px}.cq-list b{font-weight:500}.cq-lab{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#dfb18c;margin:40px 0 12px}
 .cq-note{border-left:2px solid #dfb18c;padding:4px 0 4px 22px;margin:30px 0 30px;max-width:62ch}.cq-note p{color:#eef2f6;margin:0}.cq-src{margin-top:10px;font-size:11px;color:#7a828c}
 .cq-q2{margin:34px 0 0;max-width:62ch}.cq-head{margin-top:64px!important;margin-bottom:6px!important}
+.cq-list li,.statp-r,.statp-f,.trp-r,.trp .statp-k,.trp-m2{border-top:0!important}h3.cq-head{margin:64px 0 8px;max-width:30ch}.ns-steps{list-style:none;counter-reset:ns;margin:22px 0 26px;padding:0}.ns-steps li{counter-increment:ns;display:flex;gap:14px;color:#eef2f6;font-weight:400;line-height:1.6;padding:3px 0}.ns-steps li::before{content:counter(ns);font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12px;color:#dfb18c;padding-top:5px;min-width:12px}.ns-steps b{font-weight:600}#enquire{padding-bottom:180px!important}.trp-d{margin-top:-28px}
+.trp{padding:24px 26px 22px!important}.trp .statp-h{margin-bottom:10px}.trp-r{padding:10px 0!important}.trp-l{margin-bottom:4px}.trp-t{font-size:15px!important;line-height:1.45!important}.trp-to{font-size:16.5px!important}.trp .statp-k{font-size:19px!important;margin-top:8px!important;padding-top:10px!important}.trp-m2{margin-top:12px!important;padding-top:6px!important;font-size:14px!important;line-height:1.45!important}
+.ns-steps li{display:block!important;position:relative;padding:3px 0 3px 26px!important}.ns-steps li::before{position:absolute;left:0;top:3px}.cq-list li{display:block!important;position:relative;padding:14px 0 14px 30px!important}.cq-list li::before{position:absolute;left:0;top:14px}
+.ns-mob{display:none}@media(max-width:900px){.ns-mob{display:block;margin:6px 0 34px}.ns-mob .cta-row{margin-top:18px}#enquire .cta-row[style*="margin-top:42px"],#enquire > .page > .cta-note{display:none!important}}
+@media(max-width:900px){.ns-steps{margin-bottom:34px!important}.ns-mob .cta-row{margin-top:30px!important}.ns-mob{margin:0 0 56px!important}.trp-m{margin:0 0 56px!important}.ns-steps li{padding:6px 0 6px 26px!important}}
+.trp .statp-h{margin-bottom:18px!important}.trp-m2{margin-top:22px!important}
 </style>
 </head>
 <body id="top">
@@ -881,7 +887,7 @@ setTimeout(d, m?2800:4500);})();</script>
 
     <h1>Check-in is at 3pm.<br><span>Their body thinks it&#39;s 3am.</span></h1>
 
-    <p class="sub"><strong>Luxury hotels invest heavily in wellness, but guests who&rsquo;ve crossed time zones don&rsquo;t always know when to use it, so they don&rsquo;t always feel their best.</strong></p>
+    <p class="sub"><strong>Luxury hotels invest heavily in wellness, but guests who&rsquo;ve crossed time zones don&rsquo;t always know when to use it, so they don&rsquo;t feel their best.</strong></p>
 
     <p class="sub sub-b"><strong>ALT&#8209;15° gets the timing right, so guests recover from jet lag and sleep better.</strong></p>
 
@@ -1018,7 +1024,7 @@ setTimeout(d, m?2800:4500);})();</script>
 
     <aside class="statp" aria-label="Why the timing matters"><div class="statp-h">Why the timing matters</div><div class="statp-r"><div class="statp-n">68%</div><div class="statp-t">of international business travellers regularly suffer jet lag symptoms.</div></div><div class="statp-r"><div class="statp-n">78%</div><div class="statp-t">of hotel guests who sleep better than expected say they&rsquo;ll definitely return.</div></div><div class="statp-r"><div class="statp-n">29%</div><div class="statp-t">of guests sleep better than expected. The rest don&rsquo;t.</div></div><div class="statp-f">A better mattress helps a guest sleep. It can&rsquo;t reset a body clock that&rsquo;s still in another time zone.</div><div class="statp-k">Getting the timing right can.</div><div class="statp-s">Sources: CDC Yellow Book; J.D. Power, North America Hotel Guest Satisfaction Index Study</div></aside>
 
-    <p class="turn"><span style="display:block">Longevity considers health over a lifetime.</span><span style="display:block">Travel Performance considers how the journey affects the traveller, and what they<span class="m-br"> </span>need from the hotel during their stay.</span></p>
+    <p class="turn"><span style="display:block">Longevity considers health over a lifetime.</span><span style="display:block">Travel Performance considers health during the stay: how the journey affects how the traveller feels, mentally and physically.</span></p>
 
     <p>Two guests can arrive at the same hotel at 7am in completely different physiological states.</p>
 
@@ -1026,8 +1032,8 @@ setTimeout(d, m?2800:4500);})();</script>
 
 
     <div class="quote cc-q cq-q2"><p>Room rates alone can no longer carry growth. Since 2019, RevPAR has risen 19% across more than 13,000 hotels, while booking costs have risen 25% and labour 20%. The hotels winning now are &ldquo;bundling wellness, unlocking ancillary revenue&rdquo;.</p><cite>DUETTO AND HOTSTATS, 2019 TO 2025</cite></div>
-    <p class="turn cq-head">That turns wellness into a commercial question.</p>
-    <ol class="cq-list"><li><b>Does it give a particular guest a reason to book?</b></li><li><b>Can it become an experience that carries a rate and lifts spend per guest?</b></li><li><b>Can it drive demand into facilities already in the building, including off&#8209;peak hours?</b></li><li><b>Does it give the commercial team a distinctive offer to sell to guests and corporate clients against the comp set?</b></li></ol>
+    <h3 class="cq-head">That turns wellness into a commercial question.</h3>
+    <ol class="cq-list"><li><b>Does it give a particular guest a reason to book?</b></li><li><b>Can it become an experience that carries a rate and lifts spend per guest?</b></li><li><b>Can it drive demand into facilities already in the property, including off&#8209;peak hours?</b></li><li><b>Does it give the commercial team a distinctive offer to sell to guests and corporate clients against the comp set?</b></li></ol>
 
     <div class="cq-lab">When it works</div><p>The guest uses the gym instead of walking past it, and the hotel has an offer to sell rather than amenities to list. The guest understands why it matters to them, and existing facilities become part of the guest experience and the reason to book, not simply an amenity available once they arrive.</p>
 
@@ -1091,7 +1097,7 @@ setTimeout(d, m?2800:4500);})();</script>
 
     <div class="recv">
       <div class="recv-h">The outcome</div>
-      <p>Your hotel&rsquo;s Travel Performance protocol and signature packages, in writing, with a clear reason for guests to choose you over the competition.</p>
+      <p>Your hotel&rsquo;s Travel Performance protocol and signature packages, with a clear reason for guests to choose you over the competition.</p>
     </div>
 
     <div class="cta-row cta-mid">
@@ -1206,7 +1212,7 @@ setTimeout(d, m?2800:4500);})();</script>
 </section>
 <section id="enquire">
   <div class="page">
-    <aside class="statp trp trp-d" aria-label="The transformation"><div class="statp-h">The transformation</div><div class="trp-r"><div class="trp-l">From</div><div class="trp-t">Wellness facilities guests walk past, jet-lagged guests who don&rsquo;t know when to use them, and similar wellness facilities and services to every competitor.</div></div><div class="trp-r"><div class="trp-l">To</div><div class="trp-t trp-to">Guests who recover from jet lag, sleep better, choose you over the competition and stay loyal to your hotel.</div></div><div class="statp-k">A greater return on the wellness you&rsquo;ve already invested in.</div><div class="trp-m2"><span>Measured by</span>Guest satisfaction (GSI) and NPS, sleep in guest reviews, repeat bookings, brand loyalty, and spend per guest and ancillary wellness revenue.</div></aside>
+    <aside class="statp trp trp-d" aria-label="The transformation"><div class="statp-h">The transformation</div><div class="trp-r"><div class="trp-l">From</div><div class="trp-t">Similar wellness facilities and services to every competitor hotel, which jet&#8209;lagged guests walk past because they don&rsquo;t know when to use them.</div></div><div class="trp-r"><div class="trp-l">To</div><div class="trp-t trp-to">Guests who recover from jet lag, sleep better, choose you over the competition and stay loyal to your hotel.</div></div><div class="statp-k">A greater return on the wellness you&rsquo;ve already invested in.</div><div class="trp-m2"><span>Measured by</span>Guest satisfaction (GSI) and NPS, sleep in guest reviews, repeat bookings, brand loyalty, and spend per guest and ancillary wellness revenue.</div></aside>
     <h2 id="next">The next step</h2>
     <h3><span style="display:block">Make Travel Performance</span><span style="display:block;color:#a8b0ba">a reason to choose your hotel.</span></h3>
 
@@ -1216,11 +1222,16 @@ setTimeout(d, m?2800:4500);})();</script>
 
     
 
-    <p><span style="display:block"><strong>1.</strong> Book a 30-minute call.</span><span style="display:block"><strong>2.</strong> We design your hotel&rsquo;s Travel Performance protocol in 90 days, guaranteed.</span><span style="display:block"><strong>3.</strong> Over a further 90 days, we embed it in your hotel and train your team.</span></p>
+    <ol class="ns-steps"><li>Book a <b>30-minute call</b>.</li><li>We design your hotel&rsquo;s Travel Performance protocol in <b>90&nbsp;days, guaranteed</b>.</li><li>Over a <b>further 90&nbsp;days</b>, we embed it in your hotel and train your team.</li></ol>
+
+    <div class="ns-mob"><div class="cta-row">
+      <button class="btn btn-p" data-tf-popup="CTrLzThL" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Travel Performance" data-tf-transitive-search-params data-tf-medium="snippet" data-tf-hidden="route=hospitality">Book a call &rarr;</button>
+    </div><p class="cta-note">Thirty minutes identifying your hotel&rsquo;s Travel Performance opportunity.</p></div>
+    <aside class="statp trp trp-m" aria-hidden="true"><div class="statp-h">The transformation</div><div class="trp-r"><div class="trp-l">From</div><div class="trp-t">Similar wellness facilities and services to every competitor hotel, which jet&#8209;lagged guests walk past because they don&rsquo;t know when to use them.</div></div><div class="trp-r"><div class="trp-l">To</div><div class="trp-t trp-to">Guests who recover from jet lag, sleep better, choose you over the competition and stay loyal to your hotel.</div></div><div class="statp-k">A greater return on the wellness you&rsquo;ve already invested in.</div><div class="trp-m2"><span>Measured by</span>Guest satisfaction (GSI) and NPS, sleep in guest reviews, repeat bookings, brand loyalty, and spend per guest and ancillary wellness revenue.</div></aside>
+    
 
     <p><strong>Designed for owners, CEOs and general managers of luxury hotels and hospitality groups, and the commercial, events, marketing, brand and wellness leaders responsible for how their property is positioned, experienced and sold.</strong></p>
 
-    <aside class="statp trp trp-m" aria-hidden="true"><div class="statp-h">The transformation</div><div class="trp-r"><div class="trp-l">From</div><div class="trp-t">Wellness facilities guests walk past, jet-lagged guests who don&rsquo;t know when to use them, and similar wellness facilities and services to every competitor.</div></div><div class="trp-r"><div class="trp-l">To</div><div class="trp-t trp-to">Guests who recover from jet lag, sleep better, choose you over the competition and stay loyal to your hotel.</div></div><div class="statp-k">A greater return on the wellness you&rsquo;ve already invested in.</div><div class="trp-m2"><span>Measured by</span>Guest satisfaction (GSI) and NPS, sleep in guest reviews, repeat bookings, brand loyalty, and spend per guest and ancillary wellness revenue.</div></aside>
     <div class="cta-row" style="margin-top:42px">
       <button class="btn btn-p" data-tf-popup="CTrLzThL" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Travel Performance" data-tf-transitive-search-params data-tf-medium="snippet" data-tf-hidden="route=hospitality">Book a call &rarr;</button>
     </div>
