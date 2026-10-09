@@ -223,7 +223,7 @@ h3{max-width:none}
 .j-line{position:absolute;left:0;right:0;top:78px;height:2px;border-radius:1px;opacity:1;background:#1a1f27;overflow:hidden}
 .j-line:after{content:"";position:absolute;left:0;top:0;bottom:0;width:0;border-radius:1px;
  background:linear-gradient(90deg in oklab,#8a7b85 0%,#dfb18c 9%,#c3d2dc 22%,#eff5f8 32%,#c3d2dc 44%,#8a7b85 56%,#4a5568 68%,#8a7b85 80%,#dfb18c 90%,#c3d2dc 100%);
- width:100%;background-size:200% 100%;animation:jdrift 120s linear infinite}
+ width:100%;background-size:200% 100%;animation:jdrift 40s linear infinite}
 .j-line.on:after{width:100%}
 @keyframes jdrift{0%{background-position:0% 0}100%{background-position:-200% 0}}
 @media(prefers-reduced-motion:reduce){.j-line.on:after{animation:none}}
@@ -1085,7 +1085,7 @@ setTimeout(d, m?2800:4500);})();</script>
 <section>
   <div class="page">
     <h2>The elements of Travel Performance</h2>
-    <h3><span style="display:block">Nine areas shape how<span class="m-br"> </span>a guest feels.</span><span class="na-g" style="display:block;color:#a8b0ba">The hotel can influence every one of them,</span> <span class="na-g" style="display:block;color:#a8b0ba">when it knows the right time for each guest.</span></h3>
+    <h3><span style="display:block">Nine areas shape how<span class="m-br"> </span>a guest feels.</span><span class="na-g" style="display:block;color:#a8b0ba">The hotel can influence every one of them,</span> <span class="na-g" style="display:block;color:#a8b0ba">when it knows the right time.</span></h3>
 
     <p>Travel changes sleep, energy, routine and recovery, while the reason for the journey stays fixed. These are the nine areas ALT&#8209;15° brings together across a property, timed to where each guest has travelled from, designed to help them recover from jet lag and realign their circadian rhythm.</p>
 
@@ -1336,7 +1336,6 @@ setTimeout(d, m?2800:4500);})();</script>
         <div class="ft-c">
           <div class="ft-cl">GET IN TOUCH</div>
           <a href="mailto:papillon@papillonluck.com">papillon@papillonluck.com</a>
-          <a href="tel:+447815934182">+44 7815 934182</a>
           <a href="https://www.linkedin.com/in/papillonluck/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
@@ -1562,6 +1561,13 @@ setTimeout(d, m?2800:4500);})();</script>
  if(!('IntersectionObserver' in window)){ l.classList.add('on'); return; }
  var o=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ l.classList.add('on'); o.disconnect(); } }); },{threshold:.2});
  o.observe(l);
+})();</script>
+<script>(function(){
+ var mq=window.matchMedia('(min-width: 901px)');
+ var sets=[['aside.statp[aria-label="Why the timing matters"]','.turn-sch'],['aside.trp-d[aria-label="The transformation"]','.page > .cta-note:last-of-type']];
+ function c(){sets.forEach(function(x){var a=document.querySelector(x[0]);if(!a)return;var e=a.parentNode.querySelector(x[1]);var st=a.nextElementSibling;a.style.marginTop='';if(!mq.matches||!e||!st)return;
+  for(var i=0;i<3;i++){var at=a.getBoundingClientRect().top,sTop=st.getBoundingClientRect().top,end=e.getBoundingClientRect().bottom;var cur=parseFloat(getComputedStyle(a).marginTop)||0;var m=cur+((sTop+end)/2-(at+a.offsetHeight/2));a.style.marginTop=Math.max(0,m)+'px';}});}
+ c();addEventListener('load',c);addEventListener('resize',c);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(c);
 })();</script>
 </body>
 </html>
