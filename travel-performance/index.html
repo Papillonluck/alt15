@@ -931,13 +931,13 @@ img[src="../img/hotel-lounge.jpg"],img[src="../img/traveller-cabin.jpg"],img[src
   <button class="skip" id="skip" aria-label="Skip intro">SKIP</button>
 </div>
 <script>(function(){var e=document.getElementById('intro');if(!e)return;
-var s;try{s=sessionStorage.getItem('alt15-intro');if(!s){var t=+localStorage.getItem('alt15-intro-t');if(t)s='1';}}catch(x){s='1';}
+var s='1';try{sessionStorage.setItem('alt15-intro','1');}catch(x){}
 try{if(document.referrer&&new URL(document.referrer).host===location.host)s='1';}catch(x){}
 var m=window.matchMedia&&(window.matchMedia('(max-width: 900px)').matches||window.matchMedia('(pointer: coarse)').matches);
 var r=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(m)document.documentElement.classList.add('intro-s');
 if(s||r){e.parentNode.removeChild(e);return;}
-try{sessionStorage.setItem('alt15-intro','1');localStorage.setItem('alt15-intro-t',String(Date.now()));}catch(x){}
+try{sessionStorage.setItem('alt15-intro','1');}catch(x){}
 document.documentElement.style.overflow='hidden';
 var d=function(){document.documentElement.style.overflow='';e.style.transition='opacity .6s ease';e.style.opacity='0';setTimeout(function(){if(e.parentNode)e.parentNode.removeChild(e);},630);};
 var k=document.getElementById('skip');if(k)k.addEventListener('click',d);
