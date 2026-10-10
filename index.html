@@ -808,7 +808,7 @@ html.intro-s .i-day{animation-duration:1.7s}
 
 /* Laptop and desktop only: the cabin image behind the hero. Phones keep the blue gradient. */
 @media(min-width:821px){
- .hero{background:#0b0e14 url(img/traveller-cabin.jpg) 78% 30%/cover no-repeat}
+ .hero{background:#0b0e14 url(img/wellness-pool-sea.jpg) 85% 0%/cover no-repeat}
  .hero::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
   background:linear-gradient(90deg,rgba(11,14,20,.95) 0%,rgba(11,14,20,.9) 36%,rgba(11,14,20,.55) 60%,rgba(11,14,20,.14) 84%),
              linear-gradient(180deg,rgba(11,14,20,.6) 0%,rgba(11,14,20,0) 20%,rgba(11,14,20,0) 52%,rgba(11,14,20,.97) 100%)}
@@ -935,6 +935,7 @@ img[src="img/hotel-lounge.jpg"],img[src="img/traveller-cabin.jpg"],img[src="img/
 <style id="cq-stack">.cq-pair{grid-template-columns:minmax(0,1fr)!important;gap:20px!important;max-width:820px;align-items:start!important}</style>
 <style id="ns-every">.ns-every{font-size:26px!important;line-height:1.3;color:#f0f3f6!important;letter-spacing:-.01em;margin-top:40px!important}.ns-30{font-size:18px;line-height:1.65;color:#eef2f6;margin-top:14px!important;max-width:620px}@media(max-width:700px){.ns-every{font-size:22px!important}.ns-30{font-size:16px}}</style>
 <style id="ro-line">@media(min-width:1000px){#enquire .ro-line{max-width:none!important;white-space:nowrap}}</style>
+<style id="cq-hd">.cq-hd{margin-top:120px}.cq-hd h3{max-width:none}.cq-hd p{max-width:640px;color:#eef2f6}@media(max-width:700px){.cq-hd h3 span{display:inline!important}.cq-hd h3 span:last-child{display:block!important}}@media(max-width:700px){.cq-hd{margin-top:80px}}</style>
 </head>
 <body id="top">
 <div class="hdr">
@@ -974,7 +975,7 @@ setTimeout(d, m?2800:4500);})();</script>
     
 
     <header class="head">
-    <div class="eyebrow">FOR LUXURY HOTELS, RESORTS, PRIVATE MEMBERS’ CLUBS AND HOSPITALITY DEVELOPMENTS</div>
+    <div class="eyebrow">FOR LUXURY HOTELS, RESORTS, PRIVATE MEMBERS’ CLUBS &amp; HOSPITALITY DEVELOPMENTS</div>
 
     <h1>Turning wellness investment<br><span>into commercial performance.</span></h1>
 
@@ -1022,9 +1023,9 @@ setTimeout(d, m?2800:4500);})();</script>
       <div class="hev-side"><div class="hev-n">56%</div><p>of total revenue at major wellness hotels was earned outside the room:<br class="hev-br"> the spa, dining, fitness and other guest services.</p></div>
       <p class="hev-s">*RLA Global and HotStats, Wellness Real Estate Report 2025, 2024 performance of over 11,000 hotels worldwide. A comparison between hotel types, not a forecast for an individual hotel.</p>
     </div>
-    <div class="cq-pair">
-    <p class="cq-em">We know how difficult it is to justify a major wellness investment to owners, the board or investors when the facilities look like everyone else&rsquo;s.</p>
-    <p class="cq-gm"><strong>We don&rsquo;t ask a GM to believe in wellness, but to see a greater return on what they&rsquo;ve invested, measured in the figures they already report on.</strong></p>
+    <div class="cq-hd">
+    <h3><span style="display:block">We know how difficult it is to justify a major wellness</span> <span style="display:block">investment to owners, the board or investors</span> <span style="display:block;color:#a8b0ba">when the facilities look like everyone else&rsquo;s.</span></h3>
+    <p>We don&rsquo;t ask a GM to believe in wellness, but to see a greater return on what they&rsquo;ve invested, measured in the figures they already report on.</p>
     </div>
   </div>
 </section>
@@ -1259,11 +1260,11 @@ setTimeout(d, m?2800:4500);})();</script>
   var sync = function(){
     var r = hero.getBoundingClientRect();
     if(wide && wide.matches){
-      /* The header shows the same slice of the cabin photo that sits behind it,
+      /* The header shows the same slice of the hero photo that sits behind it,
          so as the page scrolls it matches the hero exactly, then turns dark once past it. */
-      var W = r.width, H = r.height, iw = 1200, ih = 921;
+      var W = r.width, H = r.height, iw = 2400, ih = 1600;
       var k = Math.max(W / iw, H / ih), bw = iw * k, bh = ih * k;
-      var bx = (W - bw) * 0.78, by = (H - bh) * 0.30 + r.top;
+      var bx = (W - bw) * 0.85, by = r.top;
       var side = 'linear-gradient(90deg,rgba(11,14,20,.95) 0%,rgba(11,14,20,.9) 36%,rgba(11,14,20,.55) 60%,rgba(11,14,20,.14) 84%)';
       var fall = 'linear-gradient(180deg,rgba(11,14,20,.6) 0%,rgba(11,14,20,0) 20%,rgba(11,14,20,0) 52%,rgba(11,14,20,.97) 100%)';
       var pos = -r.top / H;
@@ -1278,7 +1279,7 @@ setTimeout(d, m?2800:4500);})();</script>
         hdr.style.background = '';
         hdr.style.backgroundColor = '#0d0f12';
         var past = 'linear-gradient(#0d0f12,#0d0f12)';
-        hdr.style.backgroundImage = past + ',' + side + ',' + fall + ',url(img/traveller-cabin.jpg)';
+        hdr.style.backgroundImage = past + ',' + side + ',' + fall + ',url(img/wellness-pool-sea.jpg)';
         hdr.style.backgroundRepeat = 'no-repeat';
         hdr.style.backgroundSize = W + 'px 4000px,' + W + 'px ' + H + 'px,' + W + 'px ' + H + 'px,' + bw + 'px ' + bh + 'px';
         hdr.style.backgroundPosition = '0 ' + r.bottom + 'px,0 0,0 ' + r.top + 'px,' + bx + 'px ' + by + 'px';
