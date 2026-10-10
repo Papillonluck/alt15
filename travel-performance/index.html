@@ -914,6 +914,19 @@ img[src="../img/hotel-lounge.jpg"],img[src="../img/traveller-cabin.jpg"],img[src
 <style id="tp-body-white">.tpx-fn p,.cc-t > p,.page > p.cq-lead,.page > p:not([class]),.adv-p,.ed2-t > p:not(.cta-note),.recv p,.tpx-guestsec .tpx-c p,.tpx-creds .tpx-c p{color:#eef2f6!important}.tpx-creds .tpx-c{background:none!important;padding:0!important;border-radius:0!important}.tpx-creds{row-gap:36px!important;gap:36px!important;margin-bottom:40px}</style>
 <style id="tp-guests-num">.tpx-guestsec .tpx-g2{max-width:900px;column-gap:56px!important}.tpx-guestsec .tpx-c{display:flex;gap:18px}.tpx-guestsec{margin-top:-50px}@media(max-width:900px){.tpx-guestsec{margin-top:-30px}}.tpx-guestsec .gnum{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:#dfb18c;padding-top:7px;flex:0 0 auto}</style>
 <style id="tp-kf">.tpx-kf{margin-top:52px}.tpx-stat .tpx-r{grid-template-columns:160px 1fr}.tpx-kf .tpx-r{margin-top:10px}.tpx-kf .tpx-n{grid-row:auto}@media(max-width:620px){.tpx-kf{margin-top:40px}.tpx-stat .tpx-r{grid-template-columns:118px 1fr}}</style>
+<style id="tp-m-2026-10-10">h3 + .tpx-months{margin-top:64px!important}@media(max-width:820px){h3 + .tpx-months{margin-top:40px!important}}@media(max-width:820px){.tpx-lab{margin-bottom:26px!important}.cta-row:not(.hero .cta-row){margin-top:56px!important}.ns-l .cta-row{margin-top:48px!important}}@media(min-width:427px) and (max-width:820px){.hero .outcome{white-space:nowrap;font-size:min(20px,calc((100vw - 48px) / 22.3))!important}.hero .outcome .h-br2{display:inline!important}}.tpx-num{counter-reset:bn}.tpx-num .tpx-c{counter-increment:bn}.tpx-num .tpx-k::before{content:counter(bn,decimal-leading-zero);color:#7d858f;margin-right:12px}.tpx .cq-lead + .tpx-stat{margin-top:72px!important}.tpx-stat + .tpx-lab{margin-top:80px!important}@media(max-width:820px){.tpx .cq-lead + .tpx-stat{margin-top:56px!important}.tpx-stat + .tpx-lab{margin-top:60px!important}}.nw{white-space:nowrap}.prs-m{display:none}
+html.intro-on,html.intro-on body{background:#27314e!important}html.intro-on body>*:not(#intro){visibility:hidden!important}
+@media(max-width:820px){
+.hero-press .prs{display:none!important}.hero-press .prs-m{display:block}.hero-press .prs-m .pm-l{display:block;white-space:nowrap;font-size:min(12.5px,3.3vw)}.hero-press .prs-m i{font-style:normal;opacity:.7;margin:0 .45em}
+.hero.m-photo{position:relative;padding-top:136px!important;background:#0d0f12!important}
+.hero.m-photo::before{content:"";position:absolute;left:0;right:0;top:0;height:226px;z-index:0;pointer-events:none;background:linear-gradient(180deg,rgba(13,15,18,.82) 0%,rgba(13,15,18,.45) 22%,rgba(13,15,18,0) 40%,rgba(13,15,18,0) 58%,#0d0f12 100%),url(../img/arrival-lobby-property.jpg) 50% 36px/auto calc(100% - 20px) no-repeat #0d0f12}
+figure.edc{margin-top:72px!important;margin-bottom:72px!important}
+.pair2{margin-top:56px!important;margin-bottom:16px}
+.ft-in{gap:0!important}.ft-in>div{display:contents}
+.ft-c{order:0!important;margin-top:0!important;margin-bottom:34px!important}.ft-c .ft-cl{margin-bottom:6px!important}
+.ft-lk{order:1!important;margin-bottom:44px!important}.ft-note{order:2!important;margin-top:0!important;margin-bottom:0!important}
+.ft-links{order:4!important;margin-top:22px!important}.ft-legal{order:5!important;margin-top:14px!important}
+}</style>
 </head>
 <body id="top">
 <div class="hdr">
@@ -942,13 +955,13 @@ var r=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').m
 if(m)document.documentElement.classList.add('intro-s');
 if(s||r){e.parentNode.removeChild(e);return;}
 try{sessionStorage.setItem('alt15-intro','1');}catch(x){}
-document.documentElement.style.overflow='hidden';
-var d=function(){document.documentElement.style.overflow='';e.style.transition='opacity .6s ease';e.style.opacity='0';setTimeout(function(){if(e.parentNode)e.parentNode.removeChild(e);},630);};
+document.documentElement.style.overflow='hidden';document.documentElement.classList.add('intro-on');
+var d=function(){document.documentElement.style.overflow='';document.documentElement.classList.remove('intro-on');e.style.transition='opacity .6s ease';e.style.opacity='0';setTimeout(function(){if(e.parentNode)e.parentNode.removeChild(e);},630);};
 var k=document.getElementById('skip');if(k)k.addEventListener('click',d);
 setTimeout(d, m?2800:4500);})();</script>
 
 <div class="srail" id="srail" aria-hidden="true"><div class="srail-f" id="srailf"></div><button class="srail-t" id="srailt" aria-label="Back to top"><span></span><em>TOP</em></button></div>
-<div class="hero">
+<div class="hero m-photo">
   <div class="page">
     
 
@@ -967,7 +980,7 @@ setTimeout(d, m?2800:4500);})();</script>
       <button class="btn btn-p" data-tf-popup="CTrLzThL" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=Travel Performance" data-tf-transitive-search-params data-tf-medium="snippet" data-tf-hidden="route=hospitality">Book a 30-minute strategy call &rarr;</button>
     </div>
 
-    <div class="press hero-press"><span class="press-l">Featured by</span><span class="press-n"><span class="prs"><span class="pl"><span>BBC</span><i>&middot;</i><span>Financial Times</span><i>&middot;</i><span>Sunday Times Travel</span><i>&middot;</i><span>Maybourne Group</span><i>&middot;</i><span>GQ</span></span><span class="pl"><span>Quintessentially</span><i>&middot;</i><span>Vogue Arabia</span><i>&middot;</i><span>Harper&rsquo;s Bazaar</span><i>&middot;</i><span>MR PORTER</span></span></span></span></div>
+    <div class="press hero-press"><span class="press-l">Featured by</span><span class="press-n"><span class="prs-m" aria-hidden="true"><span class="pm-l"><span>BBC</span><i>&middot;</i><span>Financial Times</span><i>&middot;</i><span>Sunday Times Travel</span><i>&middot;</i></span><span class="pm-l"><span>Maybourne Group</span><i>&middot;</i><span>GQ</span><i>&middot;</i><span>Quintessentially</span><i>&middot;</i></span><span class="pm-l"><span>Vogue Arabia</span><i>&middot;</i><span>Harper&rsquo;s Bazaar</span><i>&middot;</i><span>MR PORTER</span></span></span><span class="prs"><span class="pl"><span>BBC</span><i>&middot;</i><span>Financial Times</span><i>&middot;</i><span>Sunday Times Travel</span><i>&middot;</i><span>Maybourne Group</span><i>&middot;</i><span>GQ</span></span><span class="pl"><span>Quintessentially</span><i>&middot;</i><span>Vogue Arabia</span><i>&middot;</i><span>Harper&rsquo;s Bazaar</span><i>&middot;</i><span>MR PORTER</span></span></span></span></div>
     </header>
 
     
@@ -1105,7 +1118,7 @@ setTimeout(d, m?2800:4500);})();</script>
       <div class="tps-i"><div class="tps-n">08</div><div class="tps-h">RECOVERY</div><p class="tps-p">The spa, treatments and recovery capabilities already in the hotel, and where they could have the most impact during the stay.</p></div>
       <div class="tps-i"><div class="tps-n">09</div><div class="tps-h">DEPARTURE AND AFTER THE STAY</div><p class="tps-p">How the guest feels after leaving, what they remember about the stay, and whether the experience gives them a reason to return.</p></div>
     </div>
-    <div class="pair2"><img loading="lazy" decoding="async" src="../img/wellness-gym.jpg" alt="A luxury hotel gym" width="1200" height="1000"><img loading="lazy" decoding="async" src="../img/wellness-treatment-room.jpg" alt="A luxury hotel treatment room" width="1200" height="1000"></div>
+    <div class="pair2"><img loading="lazy" decoding="async" src="../img/tp-spa.jpg" alt="A luxury hotel spa pool" width="1374" height="1145"><img loading="lazy" decoding="async" src="../img/tp-gym.jpg" alt="A luxury hotel gym" width="1374" height="1145"></div>
   </div>
 </section>
 
@@ -1160,13 +1173,9 @@ setTimeout(d, m?2800:4500);})();</script>
       <div class="tpx-r"><div class="tpx-n">+19%</div><div class="tpx-rt">Revenue per available room</div><div class="tpx-b"><i style="width:76%"></i></div></div>
       <div class="tpx-r tpx-r2"><div class="tpx-n">+25%</div><div class="tpx-rt">Booking costs per available room</div><div class="tpx-b"><i style="width:100%"></i></div></div>
     </div>
-    <div class="tpx-stat tpx-kf"><div class="tpx-k">Major wellness vs no wellness, 2024***</div>
-      <div class="tpx-r"><div class="tpx-n">+108%</div><div class="tpx-rt">Total revenue per available room (TRevPAR)</div></div>
-      <div class="tpx-r tpx-r2"><div class="tpx-n">56%</div><div class="tpx-rt">Of that revenue earned outside the room</div></div>
-    </div>
     <div class="tpx-lab">Designed to improve</div>
-    <div class="tpx-g3"><div class="tpx-c"><div class="tpx-k">TRevPAR</div><p class="tpx-h">Revenue beyond the room</p><p>The package, the spa, F&amp;B and in-room dining all count towards total revenue per available room, not only the rate.</p></div><div class="tpx-c"><div class="tpx-k">ADR</div><p class="tpx-h">A rate worth paying more for</p><p>A Travel Performance stay package, sold before arrival and priced above the standard room rate.</p></div><div class="tpx-c"><div class="tpx-k">Spend per guest</div><p class="tpx-h">More of your services sold</p><p>Guests who feel ready to enjoy their stay book more of the treatments, dining and training you already offer.</p></div><div class="tpx-c"><div class="tpx-k">Off-peak utilisation</div><p class="tpx-h">Revenue from quieter hours</p><p>Body-clock timing brings guests into the spa, gym and restaurants at hours that usually sit empty.</p></div><div class="tpx-c"><div class="tpx-k">GSI and NPS</div><p class="tpx-h">Scores that sell the next stay</p><p>Guests who sleep and recover better rate the stay higher, in the reviews other travellers read before booking.</p></div><div class="tpx-c"><div class="tpx-k">Repeat bookings</div><p class="tpx-h">Returns that cost less to win</p><p>A guest with a travel profile has a reason to book with you again, designed to bring them back direct as booking costs keep rising.</p></div></div>
-    <p class="tpx-src">*Michael Grove, HotStats, UK hotels: Q1 revenue growth isn&rsquo;t outpacing costs, June 2026. **Source: Duetto and HotStats, global aggregated hotel performance analysis, 14 January 2026.<br>***Source: RLA Global and HotStats, Wellness Real Estate Report 2025, over 11,000 hotels worldwide.</p>
+    <div class="tpx-g3 tpx-num"><div class="tpx-c"><div class="tpx-k">TRevPAR</div><p class="tpx-h">Revenue beyond the room</p><p>The package, the spa, F&amp;B and in-room dining all count towards total revenue per available room, not only the rate.</p></div><div class="tpx-c"><div class="tpx-k">ADR</div><p class="tpx-h">A rate worth paying more for</p><p>A Travel Performance stay package, sold before arrival and priced above the standard room rate.</p></div><div class="tpx-c"><div class="tpx-k">Spend per guest</div><p class="tpx-h">More of your services sold</p><p>Guests who feel ready to enjoy their stay book more of the treatments, dining and training you already offer.</p></div><div class="tpx-c"><div class="tpx-k">Off-peak utilisation</div><p class="tpx-h">Revenue from quieter hours</p><p>Body-clock timing brings guests into the spa, gym and restaurants at hours that usually sit empty.</p></div><div class="tpx-c"><div class="tpx-k">GSI and NPS</div><p class="tpx-h">Scores that sell the next stay</p><p>Guests who sleep and recover better rate the stay higher, in the reviews other travellers read before booking.</p></div><div class="tpx-c"><div class="tpx-k">Repeat bookings</div><p class="tpx-h">Returns that cost less to win</p><p>A guest with a travel profile has a reason to book with you again, designed to bring them back direct as booking costs keep rising.</p></div></div>
+    <p class="tpx-src">*Michael Grove, HotStats, UK hotels: Q1 revenue growth isn&rsquo;t outpacing costs, June 2026. **Source: Duetto and HotStats, global aggregated hotel performance analysis, 14 January 2026.</p>
   </div>
 </section>
 
@@ -1200,7 +1209,7 @@ setTimeout(d, m?2800:4500);})();</script>
 
     <div class="tpx-wyb">
       <h3><span style="display:block">Your rooms, F&amp;B, spa and guest services,</span><span style="display:block;color:#a8b0ba">coordinated around each traveller.</span></h3>
-      <div class="tpx-g3"><div class="tpx-c"><div class="tpx-k">Months 1 to 3</div><p class="tpx-h">Circadian science and AI design</p><p>Your protocol, developed with our PhD jet lag specialist and built around your guests and the services you already have. A stay package sold before arrival, offered on the room categories and number of nights you choose.</p></div><div class="tpx-c"><div class="tpx-k">Months 4 to 6</div><p class="tpx-h">Embed and educate</p><p>We educate each department involved, so every team knows what to offer guests and when. We advise your sales and marketing team on the story and how to sell it, ready for their launch.</p></div><div class="tpx-c"><div class="tpx-k">Throughout</div><p class="tpx-h">Your team delivers the hospitality.</p><p>ALT&#8209;15° provides the timing and coordination, with regular leadership sessions and short video training for each department. No one needs to learn circadian science, and each guest&rsquo;s confidential information remains privately owned by your hotel.</p></div></div>
+      <div class="tpx-g3 tpx-months"><div class="tpx-c"><div class="tpx-k">Months 1 to 3</div><p class="tpx-h">Circadian science and AI design</p><p>Your protocol, developed with our PhD jet lag specialist and built around your guests and the services you already have. A stay package sold before arrival, offered on the room categories and number of nights you choose.</p></div><div class="tpx-c"><div class="tpx-k">Months 4 to 6</div><p class="tpx-h">Embed and educate</p><p>We educate each department involved, so every team knows what to offer guests and when. We advise your sales and marketing team on the story and how to sell it, ready for their launch.</p></div><div class="tpx-c"><div class="tpx-k">Throughout</div><p class="tpx-h">Your team delivers the hospitality.</p><p>ALT&#8209;15° provides the timing and coordination, with regular leadership sessions and short video training for each department. No one needs to learn circadian science, and each guest&rsquo;s confidential information remains privately owned by your hotel.</p></div></div>
     </div>
 
     <div class="adv-pw">The six-month engagement</div>
@@ -1335,7 +1344,7 @@ setTimeout(d, m?2800:4500);})();</script>
           <a href="/cookie-policy.html">Cookie Policy</a>
         </div>
         <div class="ft-legal">
-          <p>&copy; 2026 ALT&#8209;15°. All rights reserved.</p>
+          <p><span class="nw">&copy; 2026 ALT&#8209;15°. All rights reserved.</span><br>Property imagery is illustrative.</p>
         </div>
       </div>
       <div>
@@ -1401,6 +1410,11 @@ setTimeout(d, m?2800:4500);})();</script>
       hdr.style.setProperty('--hdrc','rgba(11,14,20,0)'); hdr.style.setProperty('--hdrc0','rgba(11,14,20,0)'); return;
     }
     hdr.style.backgroundImage = ''; hdr.style.setProperty('--hgo', 0);
+    if(hero.classList.contains('m-photo')){
+      var a = Math.max(0, Math.min(1, -r.top / 260));
+      var col = 'rgba(13,15,18,' + a.toFixed(3) + ')';
+      hdr.style.background = col; hdr.style.setProperty('--hdrc', col); hdr.style.setProperty('--hdrc0', 'rgba(13,15,18,0)'); return;
+    }
     if(r.bottom <= 0){ hdr.style.background = '#0d0f12';
       hdr.style.setProperty('--hdrc','#0d0f12'); hdr.style.setProperty('--hdrc0','rgba(13,15,18,0)'); return; }
     var pct = (-r.top / r.height) * 100;
