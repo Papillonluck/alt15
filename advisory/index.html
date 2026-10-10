@@ -502,7 +502,7 @@ html.cal-open .ui.count{visibility:hidden}
 .s[aria-label="The evidence"] .ev-side{display:block!important;margin-top:52px!important;padding-top:0!important}
 .s[aria-label="The evidence"] .ev-n{font-size:56px!important;margin-bottom:16px}
 .s[aria-label="The evidence"] .ev-side p{font-size:16px!important;line-height:1.65!important}
-.s[aria-label="The evidence"] .ret-foot{margin-top:36px!important;margin-bottom:84px!important;line-height:1.6!important}
+.s[aria-label="The evidence"] .ret-foot{margin-top:36px!important;margin-bottom:0!important;line-height:1.6!important}
 }@media (max-width:760px) and (orientation:portrait) and (hover:none) and (pointer:coarse){
 /* 05 + 07 headings match every other slide */
 section.s[aria-label="What we help with"] h2.h-m{font-size:27px!important;line-height:1.25!important}
@@ -515,7 +515,7 @@ section.s[aria-label="What we help with"] .areas.ar2{margin-top:26px!important}
  background:linear-gradient(180deg in oklab,#8a7b85 0%,#dfb18c 9%,#c3d2dc 22%,#eff5f8 32%,#c3d2dc 44%,#8a7b85 56%,#4a5568 68%,#8a7b85 80%,#dfb18c 90%,#c3d2dc 100%);
  background-size:100% 200%;clip-path:inset(0 0 100% 0);transition:clip-path 4.5s cubic-bezier(.4,0,.2,1);animation:mldrift 14s linear infinite}
 .mline.on{clip-path:inset(0 0 0 0)}
-@keyframes mldrift{from{background-position:0 0}to{background-position:0 200%}}
+@keyframes mldrift{from{background-position:0 200%}to{background-position:0 0}}
 section.s[aria-label="What we help with"] .areas .ad{z-index:1}
 /* 06 numbered items, footnote-size note */
 section.s[aria-label="How it works"] .f5{counter-reset:hw}
@@ -525,15 +525,18 @@ section.s[aria-label="How it works"] p.hiw-note{font-size:13px!important;line-he
 /* 07 box copy at body size */
 section.s[aria-label="Why ALT-15°"] .creds.c3>div{font-size:16px!important;line-height:1.6!important}
 /* 08 room to breathe, footer set apart from the CTA */
-section.s[aria-label="Next step"] .dft{margin-top:120px!important;row-gap:40px!important}
+section.s[aria-label="Next step"] .dft{margin-top:180px!important;row-gap:40px!important}
 section.s[aria-label="Next step"] .ft-cl{margin-bottom:18px!important}
 section.s[aria-label="Next step"] .ft-links2{display:grid!important;grid-template-columns:auto auto;justify-content:start;gap:14px 22px!important}section.s[aria-label="Next step"] .ft-links2 a:nth-child(1){order:1}section.s[aria-label="Next step"] .ft-links2 a:nth-child(4){order:2}section.s[aria-label="Next step"] .ft-links2 a:nth-child(2){order:3}section.s[aria-label="Next step"] .ft-links2 a:nth-child(3){order:4}
 section.s[aria-label="Next step"] .ft-links2 a{font-size:min(15px,3.6vw)!important;white-space:nowrap}
 section.s[aria-label="Next step"] .ft-links2 a+a{margin-top:0!important}
 section.s[aria-label="Next step"] .dft-row{margin-top:40px!important;gap:28px!important}
 section.s[aria-label="Next step"] .ft-legal{margin-top:22px!important}
-section.s[aria-label="Next step"] .pad{padding-bottom:64px!important}
-}</style>
+section.s[aria-label="Next step"] .pad{padding-bottom:36px!important}
+}@media (max-width:760px) and (orientation:portrait) and (hover:none) and (pointer:coarse){section.s:not([aria-label="Cover"]) > .who-img,section.s:not([aria-label="Cover"]) > .f-img{margin-top:84px!important}
+.ev-b i{transform:scaleX(0)}
+.ev.grow .ev-b i{animation:evgrow 1.4s cubic-bezier(.2,.7,.2,1) both!important}
+.ev.grow .ev-r2 .ev-b i{animation-delay:.25s!important}}</style>
 </head>
 <body>
 <div class="ui brand">ALT&#8209;15<i></i></div>
@@ -740,8 +743,8 @@ var sec=document.querySelector('section.s[aria-label="What we help with"]');if(!
 var ln=document.createElement('div');ln.className='mline';pad.appendChild(ln);
 function rel(el){var x=0,y=0;while(el&&el!==pad){x+=el.offsetLeft;y+=el.offsetTop;el=el.offsetParent;}return [x,y];}
 function place(){var dots=sec.querySelectorAll('.areas .ad');if(!dots.length)return;var f=rel(dots[0]),l=rel(dots[dots.length-1]),w=dots[0].offsetWidth,h=dots[0].offsetHeight;
-var S=function(k,v){ln.style.setProperty(k,v,'important')};S('left',(f[0]+w/2-1)+'px');S('top',(f[1]+h/2)+'px');S('height',Math.max(0,l[1]-f[1])+'px');S('width','2px');S('right','auto');S('bottom','auto');}
+var S=function(k,v){ln.style.setProperty(k,v,'important')};S('left',(f[0]+w/2-1)+'px');S('top',(f[1]+h/2)+'px');var last=sec.querySelector('.areas.ar2 > div:last-child');var lb=last?rel(last)[1]+last.offsetHeight:l[1];S('height',Math.max(0,lb-(f[1]+h/2))+'px');S('width','2px');S('right','auto');S('bottom','auto');}
 place();addEventListener('resize',place);setTimeout(place,600);
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){place();ln.classList.add('on');io.disconnect();}})},{threshold:0.12});io.observe(a1);}else ln.classList.add('on');
-})();</script></body>
+})();</script><script>(function(){if(!matchMedia('(max-width:760px) and (orientation:portrait) and (hover:none) and (pointer:coarse)').matches)return;var e=document.querySelector('section.s[aria-label="The evidence"] .ev');if(!e)return;if(!('IntersectionObserver' in window)){e.classList.add('grow');return;}var o=new IntersectionObserver(function(x){x.forEach(function(y){if(y.isIntersecting){e.classList.add('grow');o.disconnect();}})},{threshold:0.35});o.observe(e);})();</script></body>
 </html>
