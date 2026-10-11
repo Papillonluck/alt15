@@ -969,6 +969,12 @@ document.addEventListener('touchmove',function(e){if(e.touches&&e.touches.length
 document.addEventListener('contextmenu',function(e){var t=e.target;if(t&&(t.tagName==='IMG'||t.tagName==='VIDEO'||t.tagName==='PICTURE'))e.preventDefault();});
 document.addEventListener('dragstart',function(e){var t=e.target;if(t&&(t.tagName==='IMG'||t.tagName==='VIDEO'))e.preventDefault();});
 })();</script>
+<style id="jline-draw">
+/* timeline line draws left to right the moment it comes into view */
+.j-line:after{width:0!important;transition:width 1.8s cubic-bezier(.22,.61,.36,1)}
+.j-line.on:after{width:100%!important}
+@media(prefers-reduced-motion:reduce){.j-line:after{width:100%!important;transition:none}}
+</style>
 </head>
 <body id="top">
 <div class="hdr">
@@ -1631,8 +1637,8 @@ setTimeout(d, m?2800:4500);})();</script>
  l.style.setProperty('--jw', l.getBoundingClientRect().width+'px');
  addEventListener('resize',function(){ l.style.setProperty('--jw', l.getBoundingClientRect().width+'px'); });
  if(!('IntersectionObserver' in window)){ l.classList.add('on'); return; }
- var o=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ l.classList.add('on'); o.disconnect(); } }); },{threshold:.2});
- o.observe(l);
+ var o=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ l.classList.add('on'); o.disconnect(); } }); },{threshold:0});
+ o.observe(l.parentNode||l);
 })();</script>
 <script>(function(){
  var mq=window.matchMedia('(min-width: 901px)');
