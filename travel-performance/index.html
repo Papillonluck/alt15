@@ -1667,13 +1667,21 @@ setTimeout(d, m?2800:4500);})();</script>
  addEventListener('scroll',tick,{passive:true}); addEventListener('resize',tick); tick();
 })();</script>
 
+<style id="jline-js">html body .j-line:after,html body .j-line.on:after{width:calc(var(--jp,0) * 100%)!important;transition:none!important}</style>
 <script>(function(){
- var l=document.querySelector('.j-line'); if(!l) return;
+ /* Timeline line: draws left to right over 1.8s as soon as it is on screen. Driven frame by frame so every browser behaves the same. */
+ var l=document.querySelector('.j-line'); if(!l) return; var g=l.parentNode, done=false;
  l.style.setProperty('--jw', l.getBoundingClientRect().width+'px');
  addEventListener('resize',function(){ l.style.setProperty('--jw', l.getBoundingClientRect().width+'px'); });
- if(!('IntersectionObserver' in window)){ l.classList.add('on'); if(l.parentNode&&l.parentNode.classList) l.parentNode.classList.add('on'); return; }
- var o=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ l.classList.add('on'); if(l.parentNode&&l.parentNode.classList) l.parentNode.classList.add('on'); o.disconnect(); } }); },{threshold:0});
- o.observe(l.parentNode||l);
+ var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function draw(){ if(done) return; done=true; l.classList.add('on'); if(g&&g.classList) g.classList.add('on');
+  if(reduce){ l.style.setProperty('--jp','1'); return; }
+  var t0=null, D=1800; function ease(x){ return 1-Math.pow(1-x,3); }
+  function step(t){ if(t0===null) t0=t; var x=Math.min(1,(t-t0)/D); l.style.setProperty('--jp',ease(x).toFixed(4)); if(x<1) requestAnimationFrame(step); }
+  requestAnimationFrame(step); }
+ function check(){ if(done) return; var box=(getComputedStyle(l).display!=='none'?l:g).getBoundingClientRect(); if(box.top<innerHeight*0.92 && box.bottom>0){ draw(); removeEventListener('scroll',check); } }
+ addEventListener('scroll',check,{passive:true}); addEventListener('load',check); check();
+ if('IntersectionObserver' in window){ var o=new IntersectionObserver(function(){ check(); },{threshold:[0,0.25,0.5,1]}); o.observe(l); if(g) o.observe(g); }
 })();</script>
 <script>(function(){
  var mq=window.matchMedia('(min-width: 901px)');
