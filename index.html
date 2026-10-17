@@ -1049,6 +1049,11 @@ document.addEventListener('dragstart',function(e){var t=e.target;if(t&&(t.tagNam
 <style id="cwp-15oct">.fw-t{margin:0 0 18px}.fw-t + .stg-h{margin-top:0!important}.story-k{color:#dfb18c!important}.story-btn{color:#c3cad2!important;border-bottom-color:rgba(195,202,210,.45)!important}@media (min-width:821px){.outcome .h-br2{display:block!important;height:0}}.hero-lg{margin-top:34px}.hlg-l{display:block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#dfb18c;margin-bottom:14px}.lgs{display:flex;flex-wrap:wrap;align-items:center;gap:16px 34px}.lgs img{display:block;width:auto!important;max-width:none!important;border:0!important;outline:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important;margin:0!important;background:none!important;aspect-ratio:auto!important;object-fit:contain!important;filter:brightness(0) invert(1);opacity:.92}.why-lg{margin:48px 0 0}.why-lg .lgs{display:grid;grid-template-columns:repeat(3,max-content);align-items:center;gap:16px 40px}.why-lg .lgs img{opacity:.6}@media (max-width:820px){.hero-lg .lgs{zoom:.86;gap:12px 20px;flex-wrap:nowrap}.why-lg .lgs{display:flex!important;flex-wrap:wrap;zoom:.9;gap:14px 30px}.why-lg{min-width:0;max-width:100%}.outcome{white-space:normal!important;font-size:19px!important}.outcome .h-br2{display:inline!important}}
 /* 17 Oct: hero headline on two lines on phones */
 @media (max-width:600px){.hero h1{font-size:min(25.5px, calc((100vw - 48px) / 14.6))!important}}
+
+.who-2col{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;max-width:1100px}
+.who-2col .who-l{max-width:none}
+@media (max-width:820px){.who-2col{grid-template-columns:1fr}}
+@media (min-width:821px){.cc-port .cc-v{align-self:start!important}.cc-port .cc-v img{height:594px!important;aspect-ratio:auto!important}}
 </style><style id="lg-top">.why-lg .lgs img{opacity:.92!important;filter:brightness(0) invert(1)!important}.founder .why-lg{margin:0!important}@media (min-width:821px){.founder{align-items:center!important;margin-bottom:72px!important}.founder .why-lg{margin-top:18px!important}.why-lg .lgs{display:flex!important;flex-wrap:wrap!important;justify-content:space-between!important;align-items:center!important;gap:16px 30px!important;zoom:.9!important;width:380px;max-width:380px}}@media (max-width:820px){.founder .why-lg{margin:40px 0 0 -142px!important;width:calc(100vw - 48px)!important;max-width:none!important}}@media (max-width:640px){.founder .why-lg{margin-left:-104px!important}}</style>
 </head>
 <body id="top">
@@ -1117,14 +1122,14 @@ setTimeout(d, m?2800:4500);})();</script>
   <div class="page">
     <h2>The commercial question</h2>
     <h3><span style="display:block">When wellness is presented as a collection of amenities,</span><span style="display:block;color:#a8b0ba">what makes yours different?</span></h3>
-    <p class="cq-lead"><strong>Planned or already made, is your wellness investment becoming a differentiated offer the right guests understand, value and choose?</strong></p>
+    <p class="cq-lead"><strong>Planned or existing, is your wellness investment becoming a differentiated offer the right guests understand, value and choose?</strong></p>
     <p>If every luxury hotel can buy cryotherapy, red light, recovery technology, diagnostics, sleep programmes and beautiful spa facilities, owning the equipment becomes less distinctive.</p>
-    <p class="cq-q">What matters is: who the offer is for, what need it meets, how the experience connects around each guest, and why they should choose you?</p>
+    <p class="cq-q">What matters is the guest journey, from before arrival to after departure: who the offer is for, what need it meets and why guests should choose you. Without it, wellness becomes a menu of activities no one knows how to deliver.</p>
     <figure class="edc edc-t edc-gym"><img loading="lazy" decoding="async" src="img/wellness-pool.jpg" alt="A luxury hotel wellness pool" width="1600" height="759"></figure>
     <div class="cq2">
       <div class="cq2-l">
     <h3 class="cq-head">That turns wellness into a commercial question.</h3>
-    <ol class="cq-list"><li><b>Does it give a particular guest a reason to book?</b></li><li><b>Can it become an experience that carries a rate and lifts spend per guest?</b></li><li><b>Can it improve utilisation of the wellness assets, including off&#8209;peak hours?</b></li><li><b>Does it give the commercial team a distinctive offer to sell to guests and corporate clients against the comp set?</b></li></ol>
+    <ol class="cq-list"><li><b>Does it give a particular guest a reason to book and return?</b></li><li><b>Can it become an experience that carries a rate and lifts spend per guest?</b></li><li><b>Can it improve utilisation of the wellness assets, including off&#8209;peak hours?</b></li><li><b>Does it give the commercial team a distinctive offer to sell to guests and corporate clients against the comp set?</b></li></ol>
       </div>
       <div class="cq2-r">
     <div class="quote cc-q cq-q2"><p>Room rates alone can no longer carry growth. Since 2019, global revenue per available room has risen 19%, while booking costs per available room have risen 25%.* The hotels winning now are &ldquo;bundling wellness, unlocking ancillary revenue&rdquo;.**</p><cite class="src2"><span>*Duetto and HotStats, global aggregated hotel performance analysis, 14 January 2026.</span><span>**Michael Grove, HotStats, June 2026.</span></cite></div>
@@ -1146,22 +1151,22 @@ setTimeout(d, m?2800:4500);})();</script>
     <div class="who-in">
     <p class="who-lead">We know how difficult it is to justify a major wellness investment to owners, the board or investors when the facilities look like everyone else&rsquo;s.</p>
     <p>We don&rsquo;t ask a GM to believe in wellness, but to see a greater return on what they&rsquo;ve invested, measured in the figures they already report on.</p>
-    <p>Opening in 6, 12 or 18 months? The time to shape your wellness proposition is now, while it&rsquo;s still in development.</p>
+    <p style="margin-top:14px">Opening in 6, 12 or 18 months? The time to shape your wellness proposition is now, while it&rsquo;s still in development.</p>
     </div>
     <figure class="edc edc-t edc-crop"><img loading="lazy" decoding="async" src="img/wellness-lounge.jpg" alt="A luxury hotel hammam" width="1600" height="759"></figure>
     <div class="adv-pw who-lab">Who we work with</div>
-    <div><div style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:#a8683a;padding:7px 12px;border-radius:2px;margin:40px 0 16px">Before opening</div><p style="color:#e6ebf0;margin:0 0 14px;font-size:16px">Shape the commercial wellness proposition early.</p>
+    <div class="who-2col"><div class="who-col"><div style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:#a8683a;padding:7px 12px;border-radius:2px;margin:40px 0 16px">Pre-opening</div><p style="color:#e6ebf0;margin:0 0 14px;font-size:16px">Shape the commercial wellness proposition early.</p>
     <ol class="who-l">
       <li><span>01</span>New openings and pre&#8209;openings</li>
-      <li><span>02</span>Reopenings and major refurbishments</li>
-    </ol>
-    <div style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:#a8683a;padding:7px 12px;border-radius:2px;margin:40px 0 16px">After opening</div><p style="color:#e6ebf0;margin:0 0 14px;font-size:16px">Strengthen the return from existing wellness assets.</p>
+      <li><span>02</span>Relaunches, reopenings and major refurbishments</li>
+      <li><span>03</span>Properties investing materially in wellness</li>
+    </ol></div><div class="who-col">
+    <div style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#fff;background:#a8683a;padding:7px 12px;border-radius:2px;margin:40px 0 16px">Post-opening</div><p style="color:#e6ebf0;margin:0 0 14px;font-size:16px">Strengthen the return from existing wellness assets.</p>
     <ol class="who-l">
-      <li><span>03</span>Repositioning or new ownership</li>
-      <li><span>04</span>Properties investing materially in wellness</li>
-      <li><span>05</span>Existing hotels whose wellness offer lacks clear direction or differentiation</li>
+      <li><span>04</span>Repositioning or new ownership</li>
+      <li><span>05</span>Existing properties whose wellness offer lacks clear direction or differentiation</li>
       <li><span>06</span>Properties bringing in a new wellness partner</li>
-    </ol></div>
+    </ol></div></div>
     <div class="cta-row" style="margin-top:40px">
       <button class="btn btn-p" data-tf-popup="mL2loqOe" data-tf-opacity="100" data-tf-size="100" data-tf-iframe-props="title=ALT-15 Strategy Call" data-tf-transitive-search-params data-tf-medium="snippet">Book a 30-minute strategy call &rarr;</button>
     </div>
@@ -1179,9 +1184,8 @@ setTimeout(d, m?2800:4500);})();</script>
       <p class="adv-p adv-lead">Senior commercial expertise to help luxury hotels, resorts, private members&rsquo; clubs, hotel-club hybrids and hospitality developments make better wellness investment decisions, develop a compelling guest proposition and turn it into revenue.</p>
       <p class="adv-p">We don&rsquo;t run your wellness department. With or without a wellness director, we make wellness work across your entire hotel, so it becomes one experience guests understand, staff can deliver and the hotel can sell.</p>
       <p class="adv-p">Our Commercial Wellness Performance engagement runs for 90&nbsp;days, taking your property through four stages: Audit, Define, Align and Activate. We work alongside senior leadership to develop a commercially compelling wellness proposition, while your team retains operational ownership.</p>
-      <p class="adv-p">The 90 days is the length of the engagement, not a countdown to opening. Pre&#8209;opening properties can start many months ahead, while positioning, pricing and packaging are still being planned, then continue with us month by month through to launch.</p>
-      <p class="adv-p">ALT&#8209;15° also acts as an external senior sounding board as the proposition develops and decisions arise.</p>
-      <p class="adv-p">Hotels invest heavily in wellness, then struggle to turn it into revenue. Facilities look like every competitor&rsquo;s, sit underused and are never packaged into an offer guests understand or teams can sell.</p>
+      <p class="adv-p" style="text-wrap:wrap!important">The 90 days is the engagement length, not a countdown to opening. Pre&#8209;opening properties can start many months ahead, while positioning, pricing and packaging are still being planned, then continue with us month by month through to launch.</p>
+      <p class="adv-p">We also act as an external senior sounding board as the proposition develops and decisions arise.</p>
       </div>
     </div>
       </div>
@@ -1312,7 +1316,7 @@ setTimeout(d, m?2800:4500);})();</script>
     
     <div class="ns-grid"><div class="ns-l">
     <h2 id="next">The next step</h2>
-    <h3><span style="display:block">Turn wellness into a reason</span><span style="display:block;color:#a8b0ba">to choose your hotel.</span></h3>
+    <h3><span style="display:block">Make wellness the reason guests</span><span style="display:block;color:#a8b0ba">choose your property and return.</span></h3>
 
     <p class="ro-line"><strong>The right offer shapes why guests book, how they spend and whether they return.</strong></p>
 
