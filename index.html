@@ -1612,8 +1612,8 @@ function tick(){if(d){var r=d.getBoundingClientRect(),vh=innerHeight;var p=(vh*0
  bars.forEach(function(b,i){var row=b.closest('.hev-r');var r=row.getBoundingClientRect(),vh=innerHeight;var p=(vh*0.85-r.top)/(vh*0.35)-(i?0.15:0);b.style.setProperty('--p',Math.max(0,Math.min(1,p)).toFixed(4));});}
 var q=false;addEventListener('scroll',function(){if(!q){q=true;requestAnimationFrame(function(){q=false;tick();});}},{passive:true});addEventListener('resize',tick);tick();})();</script><script>(function(){var d=document.querySelector('details.story');if(!d)return;var mq=matchMedia('(min-width:821px)');
 function fit(){d.style.marginTop='';if(!d.open||!mq.matches)return;var t=document.querySelector('.fo-cc .cc-t'),v=document.querySelector('.fo-cc .cc-v'),f=d.querySelector('.story-in > *');if(!t||!v||!f)return;
-var ps=t.querySelectorAll('p');var last=ps[ps.length-1].getBoundingClientRect();var vr=v.getBoundingClientRect();
+var ps=t.querySelectorAll('p');var lg=t.querySelector('.why-lg2');var last=(lg||ps[ps.length-1]).getBoundingClientRect();var vr=v.getBoundingClientRect();
 var right=0;[].forEach.call(d.querySelectorAll('.story-in > *'),function(e){right=Math.max(right,e.getBoundingClientRect().right)});
-if(right>vr.left-8)return;var gap=f.getBoundingClientRect().top-last.bottom;var want=30;if(gap>want)d.style.setProperty('margin-top',(-(gap-want))+'px','important');}
+if(right>vr.left-8)return;var gap=f.getBoundingClientRect().top-last.bottom;var want=lg?78:30;if(gap>want)d.style.setProperty('margin-top',(-(gap-want))+'px','important');}
 d.addEventListener('toggle',function(){setTimeout(fit,0)});addEventListener('resize',fit);})();</script><script>(function(){var h=document.querySelector('.hdr'),hero=document.querySelector('.hero');if(!h||!hero)return;function lim(){var m=window.matchMedia('(max-width:820px)').matches;return m?150:Math.max(200,hero.offsetHeight-200)}function u(){h.classList.toggle('past-photo',window.scrollY>=lim())}u();window.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u)})();</script></body>
 </html>
