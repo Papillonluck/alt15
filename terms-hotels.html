@@ -207,8 +207,9 @@
 <nav class="legal-nav">
   <a href="privacy-policy-hotels.html">Privacy Policy</a>
   <a href="cookie-policy-hotels.html">Cookie Policy</a>
-  <a href="commercial-wellness/" class="home" onclick="if(document.referrer&&document.referrer.indexOf(location.host)>-1){history.back();return false;}">&larr; Back to ALT&#8209;15°</a>
+  <a href="commercial-wellness/" class="home" onclick="return altBack()">&larr; Back to ALT&#8209;15°</a>
 </nav>
 
+<script>(function(){try{var r=document.referrer;if(r){var u=new URL(r);if(u.host===location.host&&!/(privacy-policy|terms|cookie-policy)/.test(u.pathname)){sessionStorage.setItem('alt15_ret',u.origin+u.pathname)}}}catch(e){}})();function altBack(){try{var u=sessionStorage.getItem('alt15_ret');if(u){location.href=u;return false}}catch(e){}return true}</script>
 </body>
 </html>
