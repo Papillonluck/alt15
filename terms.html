@@ -207,7 +207,7 @@
 <nav class="legal-nav">
   <a href="privacy-policy.html">Privacy Policy</a>
   <a href="cookie-policy.html">Cookie Policy</a>
-  <a href="index.html" class="home">&larr; Back to ALT&#8209;15°</a>
+  <a href="index.html" class="home" onclick="if(document.referrer&&document.referrer.indexOf(location.host)>-1){history.back();return false;}">&larr; Back to ALT&#8209;15°</a>
 </nav>
 
 </body>
